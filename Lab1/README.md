@@ -1,4 +1,4 @@
-# Lab session #1: Basic "Knowledge Toolbox" to get started in the Cloud
+# Lab session #1: Basic "Knowledge Toolbox"
 
 Course link: [ccbda-upc.github.io](https://ccbda-upc.github.io/).
 Group 1207
