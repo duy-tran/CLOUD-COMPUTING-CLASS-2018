@@ -32,3 +32,5 @@ de Catalunya. For project delivery and recovery of information during the course
     - Install git in the EC2 AMI ``` sudo yum install git```
     - Install python environment, following this [source](https://gist.github.com/niranjv/f80fc1f488afc49845e2ff3d5df7f83b).
 - [x] Execution of the python script in the instances, see attached [picture](./Lab1AWSTerminal.png).
+- [x] Set up and configuration of a AWS S3 bucket and synchronization with this repository.
+    See attached [picture](./Lab1.S3Bucket.png).
