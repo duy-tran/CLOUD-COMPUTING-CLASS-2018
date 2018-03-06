@@ -1,12 +1,11 @@
 # Lab session #1: Basic "Knowledge Toolbox" to get started in the Cloud
 
+Course link: [ccbda-upc.github.io](https://ccbda-upc.github.io/).
 Group 1207
 
 -   Quang Duy Tran - duy9968\@gmail.com
 
 -   Marc Garnica Caparros - marcgarnicacaparros\@gmail.com
-
-Course link: [ccbda-upc.github.io](https://ccbda-upc.github.io/).
 
 Assignment link: [Lab 1 Assignment](https://github.com/CCBDA-UPC/Assignments-2018/blob/master/Lab01.md) 
 
