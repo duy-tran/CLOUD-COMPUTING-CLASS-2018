@@ -1,0 +1,9 @@
+Group 1207
+
+Quang Duy Tran - duy9968@gmail.com
+Marc Garnica Caparrós - marcgarnicacaparros@gmail.com
+
+Group repository -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018 
+Lab1 repository folder -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/tree/master/Lab1
+
+Comments : We edited both README files for easy navigation on the repository.
