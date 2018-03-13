@@ -24,6 +24,8 @@ in http://apps.twitter.com
 
 ### Lab tasks
 
+#### NLTK
+
 - [x] NLTK package setup. Python package for Natural Language Processing. It does not only include algorithms but also linguistic data.
 - [x] **Task 2.1.1** [First script]() using NLTK: Tokenizing the whole .txt file, counting the tokens and printing the 10 most common, also printing the total number of words in the file (with and without repetitions)
 
@@ -37,6 +39,8 @@ in http://apps.twitter.com
 - [x] **Task 2.1.3** For a better analysis of the words used in the file, it is also possible to remove the Stop Words, words language-dependent that are highly used without adding semantic meaning to the context. [Third Script]().
 
 ![Task 2.1.3](img/t213.png)
+
+#### TWEEPY
 
 - [x] Tweepy setup on the python environment. Package to access Twitter data.
 - [x] Getting the Twitter credentials from the twitter app created previously.
