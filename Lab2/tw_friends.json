@@ -1,0 +1,2214 @@
+{
+  "id": 735275364,
+  "id_str": "735275364",
+  "name": "Reshi",
+  "screen_name": "Alex_kid_7",
+  "location": "Outer Haven",
+  "description": "Pero Taborl\u00edn, conoc\u00eda el nombre de todas las cosas y todas las cosas estaban a sus \u00f3rdenes. \nhttps://t.co/ESD3f2cd1b\n@Laocarinanasal",
+  "url": "https://t.co/ZqxRlO7cNQ",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "https://t.co/ZqxRlO7cNQ",
+          "expanded_url": "http://latabernadelerrante.blogspot.es/",
+          "display_url": "latabernadelerrante.blogspot.es",
+          "indices": [
+            0,
+            23
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": [
+        {
+          "url": "https://t.co/ESD3f2cd1b",
+          "expanded_url": "http://instagram.com/real_reshi/",
+          "display_url": "instagram.com/real_reshi/",
+          "indices": [
+            94,
+            117
+          ]
+        }
+      ]
+    }
+  },
+  "protected": false,
+  "followers_count": 67,
+  "friends_count": 234,
+  "listed_count": 1,
+  "created_at": "Fri Aug 03 17:52:34 +0000 2012",
+  "favourites_count": 1380,
+  "utc_offset": 7200,
+  "time_zone": "Athens",
+  "geo_enabled": true,
+  "verified": false,
+  "statuses_count": 3882,
+  "lang": "es",
+  "status": {
+    "created_at": "Tue Mar 13 16:44:49 +0000 2018",
+    "id": 973600781978030081,
+    "id_str": "973600781978030081",
+    "text": "RT @Proscojoncio: https://t.co/ArE48rdKGo",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Proscojoncio",
+          "name": "Proscojoncio",
+          "id": 254542744,
+          "id_str": "254542744",
+          "indices": [
+            3,
+            16
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 973593167881736192,
+          "id_str": "973593167881736192",
+          "indices": [
+            18,
+            41
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+          "url": "https://t.co/ArE48rdKGo",
+          "display_url": "pic.twitter.com/ArE48rdKGo",
+          "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973593176790503425,
+          "source_status_id_str": "973593176790503425",
+          "source_user_id": 254542744,
+          "source_user_id_str": "254542744"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 973593167881736192,
+          "id_str": "973593167881736192",
+          "indices": [
+            18,
+            41
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+          "url": "https://t.co/ArE48rdKGo",
+          "display_url": "pic.twitter.com/ArE48rdKGo",
+          "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973593176790503425,
+          "source_status_id_str": "973593176790503425",
+          "source_user_id": 254542744,
+          "source_user_id_str": "254542744"
+        },
+        {
+          "id": 973593172248064002,
+          "id_str": "973593172248064002",
+          "indices": [
+            18,
+            41
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYLl1POXcAIt4a-.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYLl1POXcAIt4a-.jpg",
+          "url": "https://t.co/ArE48rdKGo",
+          "display_url": "pic.twitter.com/ArE48rdKGo",
+          "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 485,
+              "h": 602,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973593176790503425,
+          "source_status_id_str": "973593176790503425",
+          "source_user_id": 254542744,
+          "source_user_id_str": "254542744"
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Tue Mar 13 16:14:36 +0000 2018",
+      "id": 973593176790503425,
+      "id_str": "973593176790503425",
+      "text": "https://t.co/ArE48rdKGo",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 973593167881736192,
+            "id_str": "973593167881736192",
+            "indices": [
+              0,
+              23
+            ],
+            "media_url": "http://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+            "url": "https://t.co/ArE48rdKGo",
+            "display_url": "pic.twitter.com/ArE48rdKGo",
+            "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 973593167881736192,
+            "id_str": "973593167881736192",
+            "indices": [
+              0,
+              23
+            ],
+            "media_url": "http://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/DYLl0-9WkAABUoR.jpg",
+            "url": "https://t.co/ArE48rdKGo",
+            "display_url": "pic.twitter.com/ArE48rdKGo",
+            "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 973593172248064002,
+            "id_str": "973593172248064002",
+            "indices": [
+              0,
+              23
+            ],
+            "media_url": "http://pbs.twimg.com/media/DYLl1POXcAIt4a-.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/DYLl1POXcAIt4a-.jpg",
+            "url": "https://t.co/ArE48rdKGo",
+            "display_url": "pic.twitter.com/ArE48rdKGo",
+            "expanded_url": "https://twitter.com/Proscojoncio/status/973593176790503425/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "small": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 485,
+                "h": 602,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 322,
+      "favorite_count": 804,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "und"
+    },
+    "is_quote_status": false,
+    "retweet_count": 322,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "und"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "C0DEED",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000080763467/7695455e509fd785a98dbc66abf73191.jpeg",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000080763467/7695455e509fd785a98dbc66abf73191.jpeg",
+  "profile_background_tile": true,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/829828055539580929/5OL91RL9_normal.jpg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/829828055539580929/5OL91RL9_normal.jpg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/735275364/1454053795",
+  "profile_link_color": "FA743E",
+  "profile_sidebar_border_color": "FFFFFF",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 724510652,
+  "id_str": "724510652",
+  "name": "JAUME",
+  "screen_name": "JCoaster1",
+  "location": "",
+  "description": "I love Roler Coaster, Books, Rubik, One Piece, Videogames, Lego, Dubstep and Sleep.",
+  "url": null,
+  "entities": {
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 40,
+  "friends_count": 205,
+  "listed_count": 2,
+  "created_at": "Sun Jul 29 19:32:17 +0000 2012",
+  "favourites_count": 3652,
+  "utc_offset": 7200,
+  "time_zone": "Athens",
+  "geo_enabled": false,
+  "verified": false,
+  "statuses_count": 2040,
+  "lang": "es",
+  "status": {
+    "created_at": "Tue Mar 13 17:37:13 +0000 2018",
+    "id": 973613967405977601,
+    "id_str": "973613967405977601",
+    "text": "RT @EiProfeta: \u00a1Ya est\u00e1 aqu\u00ed el primer trailer de \"Animales fant\u00e1sticos: Los Cr\u00edmenes de Grindelwald\"! https://t.co/E5cY6J9dqP",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "EiProfeta",
+          "name": "El Profeta",
+          "id": 1290550819,
+          "id_str": "1290550819",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 973590463923048448,
+          "id_str": "973590463923048448",
+          "indices": [
+            103,
+            126
+          ],
+          "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+          "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+          "url": "https://t.co/E5cY6J9dqP",
+          "display_url": "pic.twitter.com/E5cY6J9dqP",
+          "expanded_url": "https://twitter.com/EiProfeta/status/973590662686871553/video/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 675,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1280,
+              "h": 720,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973590662686871553,
+          "source_status_id_str": "973590662686871553",
+          "source_user_id": 1290550819,
+          "source_user_id_str": "1290550819"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 973590463923048448,
+          "id_str": "973590463923048448",
+          "indices": [
+            103,
+            126
+          ],
+          "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+          "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+          "url": "https://t.co/E5cY6J9dqP",
+          "display_url": "pic.twitter.com/E5cY6J9dqP",
+          "expanded_url": "https://twitter.com/EiProfeta/status/973590662686871553/video/1",
+          "type": "video",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 675,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1280,
+              "h": 720,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973590662686871553,
+          "source_status_id_str": "973590662686871553",
+          "source_user_id": 1290550819,
+          "source_user_id_str": "1290550819",
+          "video_info": {
+            "aspect_ratio": [
+              16,
+              9
+            ],
+            "duration_millis": 116533,
+            "variants": [
+              {
+                "bitrate": 320000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/320x180/6JlbGI_qlg7nwosr.mp4"
+              },
+              {
+                "content_type": "application/x-mpegURL",
+                "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/pl/3OPsuMddu-EWImVC.m3u8"
+              },
+              {
+                "bitrate": 2176000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/1280x720/d8fMlbW4h-P_H1Vi.mp4"
+              },
+              {
+                "bitrate": 832000,
+                "content_type": "video/mp4",
+                "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/640x360/vKn6kJuzQJ8NcTHl.mp4"
+              }
+            ]
+          },
+          "additional_media_info": {
+            "monetizable": false
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Tue Mar 13 16:04:37 +0000 2018",
+      "id": 973590662686871553,
+      "id_str": "973590662686871553",
+      "text": "\u00a1Ya est\u00e1 aqu\u00ed el primer trailer de \"Animales fant\u00e1sticos: Los Cr\u00edmenes de Grindelwald\"! https://t.co/E5cY6J9dqP",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 973590463923048448,
+            "id_str": "973590463923048448",
+            "indices": [
+              88,
+              111
+            ],
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+            "url": "https://t.co/E5cY6J9dqP",
+            "display_url": "pic.twitter.com/E5cY6J9dqP",
+            "expanded_url": "https://twitter.com/EiProfeta/status/973590662686871553/video/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 973590463923048448,
+            "id_str": "973590463923048448",
+            "indices": [
+              88,
+              111
+            ],
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/973590463923048448/pu/img/18Z1HfAKwYKa461y.jpg",
+            "url": "https://t.co/E5cY6J9dqP",
+            "display_url": "pic.twitter.com/E5cY6J9dqP",
+            "expanded_url": "https://twitter.com/EiProfeta/status/973590662686871553/video/1",
+            "type": "video",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              }
+            },
+            "video_info": {
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration_millis": 116533,
+              "variants": [
+                {
+                  "bitrate": 320000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/320x180/6JlbGI_qlg7nwosr.mp4"
+                },
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/pl/3OPsuMddu-EWImVC.m3u8"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/1280x720/d8fMlbW4h-P_H1Vi.mp4"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/973590463923048448/pu/vid/640x360/vKn6kJuzQJ8NcTHl.mp4"
+                }
+              ]
+            },
+            "additional_media_info": {
+              "monetizable": false
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 2695,
+      "favorite_count": 4381,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "es"
+    },
+    "is_quote_status": false,
+    "retweet_count": 2695,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "es"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "141113",
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+  "profile_background_tile": true,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/736958914747609090/eHHud_BE_normal.jpg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/736958914747609090/eHHud_BE_normal.jpg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/724510652/1497094878",
+  "profile_link_color": "981CEB",
+  "profile_sidebar_border_color": "000000",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 937592982,
+  "id_str": "937592982",
+  "name": "Innova't Educaci\u00f3",
+  "screen_name": "InnovatEduc",
+  "location": "Giron\u00e8s",
+  "description": "Empresa de serveis educatius, i cursos de formaci\u00f3 docent.\nEspecialistes en noves tecnologies, rob\u00f2tica educativa, videojocs, programaci\u00f3 i creaci\u00f3 3D.",
+  "url": "http://t.co/L5PLEypU6W",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "http://t.co/L5PLEypU6W",
+          "expanded_url": "http://www.innovateducacio.cat",
+          "display_url": "innovateducacio.cat",
+          "indices": [
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 4025,
+  "friends_count": 2696,
+  "listed_count": 115,
+  "created_at": "Fri Nov 09 19:29:11 +0000 2012",
+  "favourites_count": 286,
+  "utc_offset": null,
+  "time_zone": null,
+  "geo_enabled": false,
+  "verified": false,
+  "statuses_count": 2546,
+  "lang": "ca",
+  "status": {
+    "created_at": "Tue Mar 13 16:30:10 +0000 2018",
+    "id": 973597092953444353,
+    "id_str": "973597092953444353",
+    "text": "Les millors p\u00e0gines web per ensenyar a programar a nens i adults. Via @androidescuela\nhttps://t.co/hkJZczUoTp https://t.co/n7lDHT3UFz",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "androidescuela",
+          "name": "AndroidEnLaEscuela",
+          "id": 2153562396,
+          "id_str": "2153562396",
+          "indices": [
+            70,
+            85
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/hkJZczUoTp",
+          "expanded_url": "https://buff.ly/2tEKQbD",
+          "display_url": "buff.ly/2tEKQbD",
+          "indices": [
+            86,
+            109
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 973597090537398272,
+          "id_str": "973597090537398272",
+          "indices": [
+            110,
+            133
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYLpZT_V4AA3udz.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYLpZT_V4AA3udz.jpg",
+          "url": "https://t.co/n7lDHT3UFz",
+          "display_url": "pic.twitter.com/n7lDHT3UFz",
+          "expanded_url": "https://twitter.com/InnovatEduc/status/973597092953444353/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 973597090537398272,
+          "id_str": "973597090537398272",
+          "indices": [
+            110,
+            133
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYLpZT_V4AA3udz.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYLpZT_V4AA3udz.jpg",
+          "url": "https://t.co/n7lDHT3UFz",
+          "display_url": "pic.twitter.com/n7lDHT3UFz",
+          "expanded_url": "https://twitter.com/InnovatEduc/status/973597092953444353/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 634,
+              "h": 309,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 2,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "ca"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "FFFFFF",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/852963058/d452c2e1601085ace505fbe612c2c506.png",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/852963058/d452c2e1601085ace505fbe612c2c506.png",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/2828499613/a0a8aa338a7fd1dc7f8cbdeba41a8929_normal.png",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/2828499613/a0a8aa338a7fd1dc7f8cbdeba41a8929_normal.png",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/937592982/1520416251",
+  "profile_link_color": "FF691F",
+  "profile_sidebar_border_color": "000000",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 111275676,
+  "id_str": "111275676",
+  "name": "Carlos Latre",
+  "screen_name": "Carlos_Latre",
+  "location": "",
+  "description": "El hombre de las mil caras",
+  "url": "https://t.co/w5kUHVNhEm",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "https://t.co/w5kUHVNhEm",
+          "expanded_url": "http://www.carloslatre.com",
+          "display_url": "carloslatre.com",
+          "indices": [
+            0,
+            23
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 978181,
+  "friends_count": 2329,
+  "listed_count": 2963,
+  "created_at": "Thu Feb 04 10:52:10 +0000 2010",
+  "favourites_count": 8777,
+  "utc_offset": 3600,
+  "time_zone": "Madrid",
+  "geo_enabled": true,
+  "verified": true,
+  "statuses_count": 32775,
+  "lang": "es",
+  "status": {
+    "created_at": "Tue Mar 13 19:24:02 +0000 2018",
+    "id": 973640849811824646,
+    "id_str": "973640849811824646",
+    "text": "RT @ferranadria: \u00a1Noche emocionante y divertida la de ayer, celebrando el d\u00e9cimo aniversario de #DosPalillos! https://t.co/Bm9Nr1kGqT",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "DosPalillos",
+          "indices": [
+            96,
+            108
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "ferranadria",
+          "name": "Ferran Adri\u00e0",
+          "id": 2385532513,
+          "id_str": "2385532513",
+          "indices": [
+            3,
+            15
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 973630424676229121,
+          "id_str": "973630424676229121",
+          "indices": [
+            110,
+            133
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+          "url": "https://t.co/Bm9Nr1kGqT",
+          "display_url": "pic.twitter.com/Bm9Nr1kGqT",
+          "expanded_url": "https://twitter.com/ferranadria/status/973630680524644352/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1620,
+              "h": 1080,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 800,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973630680524644352,
+          "source_status_id_str": "973630680524644352",
+          "source_user_id": 2385532513,
+          "source_user_id_str": "2385532513"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 973630424676229121,
+          "id_str": "973630424676229121",
+          "indices": [
+            110,
+            133
+          ],
+          "media_url": "http://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+          "url": "https://t.co/Bm9Nr1kGqT",
+          "display_url": "pic.twitter.com/Bm9Nr1kGqT",
+          "expanded_url": "https://twitter.com/ferranadria/status/973630680524644352/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1620,
+              "h": 1080,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 800,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 973630680524644352,
+          "source_status_id_str": "973630680524644352",
+          "source_user_id": 2385532513,
+          "source_user_id_str": "2385532513"
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Tue Mar 13 18:43:38 +0000 2018",
+      "id": 973630680524644352,
+      "id_str": "973630680524644352",
+      "text": "\u00a1Noche emocionante y divertida la de ayer, celebrando el d\u00e9cimo aniversario de #DosPalillos! https://t.co/Bm9Nr1kGqT",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "DosPalillos",
+            "indices": [
+              79,
+              91
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 973630424676229121,
+            "id_str": "973630424676229121",
+            "indices": [
+              93,
+              116
+            ],
+            "media_url": "http://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+            "url": "https://t.co/Bm9Nr1kGqT",
+            "display_url": "pic.twitter.com/Bm9Nr1kGqT",
+            "expanded_url": "https://twitter.com/ferranadria/status/973630680524644352/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1620,
+                "h": 1080,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 800,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 453,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 973630424676229121,
+            "id_str": "973630424676229121",
+            "indices": [
+              93,
+              116
+            ],
+            "media_url": "http://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/DYMHtnVW4AE52CP.jpg",
+            "url": "https://t.co/Bm9Nr1kGqT",
+            "display_url": "pic.twitter.com/Bm9Nr1kGqT",
+            "expanded_url": "https://twitter.com/ferranadria/status/973630680524644352/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1620,
+                "h": 1080,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 800,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 453,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 33,
+      "favorite_count": 124,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "es"
+    },
+    "is_quote_status": false,
+    "retweet_count": 33,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "es"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "022330",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/454299714762969088/N-fLv3Y6.jpeg",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/454299714762969088/N-fLv3Y6.jpeg",
+  "profile_background_tile": true,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/762743762485383168/Bh5XNqDy_normal.jpg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/762743762485383168/Bh5XNqDy_normal.jpg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/111275676/1466610595",
+  "profile_link_color": "0084B4",
+  "profile_sidebar_border_color": "000000",
+  "profile_sidebar_fill_color": "C0DFEC",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 2992126263,
+  "id_str": "2992126263",
+  "name": "Clautic League",
+  "screen_name": "clauticleague",
+  "location": "",
+  "description": "Competici\u00f3n de rob\u00f3tica online. 6 retos cada temporada. Online robotics competition. 6 challenges for season #lego #arduino #moway #bq #ev3 #mindstorms",
+  "url": "http://t.co/EVR4T0cHYT",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "http://t.co/EVR4T0cHYT",
+          "expanded_url": "http://www.clautic.com/league",
+          "display_url": "clautic.com/league",
+          "indices": [
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 386,
+  "friends_count": 1162,
+  "listed_count": 10,
+  "created_at": "Thu Jan 22 14:21:52 +0000 2015",
+  "favourites_count": 200,
+  "utc_offset": 3600,
+  "time_zone": "Ljubljana",
+  "geo_enabled": false,
+  "verified": false,
+  "statuses_count": 439,
+  "lang": "es",
+  "status": {
+    "created_at": "Sun Apr 10 11:07:59 +0000 2016",
+    "id": 719119731756822528,
+    "id_str": "719119731756822528",
+    "text": "RT @_LaRegadora_: Bon dia! Feli\u00e7 dissabte! Els dos equips de La Regadora continuem treballant amb el 5\u00e8 repte de la lliga de rob\u00f2tica @clau\u2026",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "_LaRegadora_",
+          "name": "La Regadora",
+          "id": 2215437110,
+          "id_str": "2215437110",
+          "indices": [
+            3,
+            16
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Sat Apr 09 08:32:25 +0000 2016",
+      "id": 718718194479951872,
+      "id_str": "718718194479951872",
+      "text": "Bon dia! Feli\u00e7 dissabte! Els dos equips de La Regadora continuem treballant amb el 5\u00e8 repte de la lliga de rob\u00f2tica @clauticleague. Som-hi!",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "clauticleague",
+            "name": "Clautic League",
+            "id": 2992126263,
+            "id_str": "2992126263",
+            "indices": [
+              116,
+              130
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 1,
+      "favorite_count": 4,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "ca"
+    },
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "ca"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "C0DEED",
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/558270472551686144/4DKgIWqX_normal.jpeg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/558270472551686144/4DKgIWqX_normal.jpeg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/2992126263/1421937164",
+  "profile_link_color": "1DA1F2",
+  "profile_sidebar_border_color": "C0DEED",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": true,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 364278812,
+  "id_str": "364278812",
+  "name": "Crack\u00f2via",
+  "screen_name": "crackoviadeTV3",
+  "location": "Crack\u00f2via, Pol\u00f2nia",
+  "description": "Programa d'humor de Televisi\u00f3 de Catalunya centrat en el futbol i l'esport en general.",
+  "url": "http://t.co/q87Wvv97Sz",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "http://t.co/q87Wvv97Sz",
+          "expanded_url": "http://www.tv3.cat/crackovia",
+          "display_url": "tv3.cat/crackovia",
+          "indices": [
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 79156,
+  "friends_count": 337,
+  "listed_count": 498,
+  "created_at": "Mon Aug 29 14:18:55 +0000 2011",
+  "favourites_count": 3137,
+  "utc_offset": 3600,
+  "time_zone": "Madrid",
+  "geo_enabled": false,
+  "verified": true,
+  "statuses_count": 13495,
+  "lang": "es",
+  "status": {
+    "created_at": "Fri Dec 29 12:37:59 +0000 2017",
+    "id": 946721961073397760,
+    "id_str": "946721961073397760",
+    "text": "RT @MinoriaAB: .@poloniatv3 @estapassanttv3 i @crackoviadeTV3, entre els grans moments d'entreteniment de @tv3cat i \"Pau, la for\u00e7a d'un sil\u2026",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "MinoriaAB",
+          "name": "Minoria Absoluta",
+          "id": 300220169,
+          "id_str": "300220169",
+          "indices": [
+            3,
+            13
+          ]
+        },
+        {
+          "screen_name": "poloniatv3",
+          "name": "Pol\u00f2nia",
+          "id": 84066250,
+          "id_str": "84066250",
+          "indices": [
+            16,
+            27
+          ]
+        },
+        {
+          "screen_name": "estapassanttv3",
+          "name": "Est\u00e0 passant",
+          "id": 893127986265960448,
+          "id_str": "893127986265960448",
+          "indices": [
+            28,
+            43
+          ]
+        },
+        {
+          "screen_name": "crackoviadeTV3",
+          "name": "Crack\u00f2via",
+          "id": 364278812,
+          "id_str": "364278812",
+          "indices": [
+            46,
+            61
+          ]
+        },
+        {
+          "screen_name": "tv3cat",
+          "name": "TV3.cat",
+          "id": 28373820,
+          "id_str": "28373820",
+          "indices": [
+            106,
+            113
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Fri Dec 29 12:20:38 +0000 2017",
+      "id": 946717595008462848,
+      "id_str": "946717595008462848",
+      "text": ".@poloniatv3 @estapassanttv3 i @crackoviadeTV3, entre els grans moments d'entreteniment de @tv3cat i \"Pau, la for\u00e7a\u2026 https://t.co/zlDpAM5uHP",
+      "truncated": true,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "poloniatv3",
+            "name": "Pol\u00f2nia",
+            "id": 84066250,
+            "id_str": "84066250",
+            "indices": [
+              1,
+              12
+            ]
+          },
+          {
+            "screen_name": "estapassanttv3",
+            "name": "Est\u00e0 passant",
+            "id": 893127986265960448,
+            "id_str": "893127986265960448",
+            "indices": [
+              13,
+              28
+            ]
+          },
+          {
+            "screen_name": "crackoviadeTV3",
+            "name": "Crack\u00f2via",
+            "id": 364278812,
+            "id_str": "364278812",
+            "indices": [
+              31,
+              46
+            ]
+          },
+          {
+            "screen_name": "tv3cat",
+            "name": "TV3.cat",
+            "id": 28373820,
+            "id_str": "28373820",
+            "indices": [
+              91,
+              98
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/zlDpAM5uHP",
+            "expanded_url": "https://twitter.com/i/web/status/946717595008462848",
+            "display_url": "twitter.com/i/web/status/9\u2026",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 946716552908496896,
+      "quoted_status_id_str": "946716552908496896",
+      "retweet_count": 9,
+      "favorite_count": 27,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ca"
+    },
+    "is_quote_status": true,
+    "quoted_status_id": 946716552908496896,
+    "quoted_status_id_str": "946716552908496896",
+    "retweet_count": 9,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "ca"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "CBE5F2",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754157402/c9ec515bd91f028e2b1d8c503c6c60b6.jpeg",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754157402/c9ec515bd91f028e2b1d8c503c6c60b6.jpeg",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/529569051312279553/65JoWHnW_normal.jpeg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/529569051312279553/65JoWHnW_normal.jpeg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/364278812/1481114804",
+  "profile_link_color": "8D00DE",
+  "profile_sidebar_border_color": "FFFFFF",
+  "profile_sidebar_fill_color": "EFB300",
+  "profile_text_color": "0A0A0A",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 4775562689,
+  "id_str": "4775562689",
+  "name": "Xusep Pedrerol",
+  "screen_name": "XusepPedrerol",
+  "location": "",
+  "description": "Soy el Pedrerol del @crackoviadeTV3. P\u00ednchame",
+  "url": null,
+  "entities": {
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 62679,
+  "friends_count": 161,
+  "listed_count": 257,
+  "created_at": "Mon Jan 11 15:55:20 +0000 2016",
+  "favourites_count": 759,
+  "utc_offset": null,
+  "time_zone": null,
+  "geo_enabled": false,
+  "verified": false,
+  "statuses_count": 2520,
+  "lang": "es",
+  "status": {
+    "created_at": "Thu Feb 08 22:25:02 +0000 2018",
+    "id": 961727600979824643,
+    "id_str": "961727600979824643",
+    "text": "Los cl\u00e1sicos nunca mueren, t\u00fa.\n\nhttps://t.co/lkknkcJhmD",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/lkknkcJhmD",
+          "expanded_url": "https://youtu.be/ghKyc1UpYWI",
+          "display_url": "youtu.be/ghKyc1UpYWI",
+          "indices": [
+            32,
+            55
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 130,
+    "favorite_count": 260,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "es"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "C0DEED",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/695544032538157056/h-AekOON.jpg",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/695544032538157056/h-AekOON.jpg",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/695644182875086848/4n6h1qTF_normal.jpg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/695644182875086848/4n6h1qTF_normal.jpg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/4775562689/1455978053",
+  "profile_link_color": "0084B4",
+  "profile_sidebar_border_color": "000000",
+  "profile_sidebar_fill_color": "000000",
+  "profile_text_color": "000000",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 3186958452,
+  "id_str": "3186958452",
+  "name": "Cadera de Boateng",
+  "screen_name": "caderadeboateng",
+  "location": "",
+  "description": "",
+  "url": null,
+  "entities": {
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 4645,
+  "friends_count": 0,
+  "listed_count": 3,
+  "created_at": "Wed May 06 20:27:19 +0000 2015",
+  "favourites_count": 4,
+  "utc_offset": -25200,
+  "time_zone": "Pacific Time (US & Canada)",
+  "geo_enabled": false,
+  "verified": false,
+  "statuses_count": 39,
+  "lang": "es",
+  "status": {
+    "created_at": "Sun Apr 23 19:20:52 +0000 2017",
+    "id": 856226384556851200,
+    "id_str": "856226384556851200",
+    "text": "\u00a1Hola, @DaniCarvajal92! \ud83d\udc40",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "DaniCarvajal92",
+          "name": "Dani Carvajal Ramos",
+          "id": 282064204,
+          "id_str": "282064204",
+          "indices": [
+            7,
+            22
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 57,
+    "favorite_count": 51,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "es"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "C0DEED",
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/632312591956598784/A3MnRfNC_normal.png",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/632312591956598784/A3MnRfNC_normal.png",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/3186958452/1439590106",
+  "profile_link_color": "1DA1F2",
+  "profile_sidebar_border_color": "C0DEED",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": true,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 874589102,
+  "id_str": "874589102",
+  "name": "World Updates",
+  "screen_name": "WorIdUpdates",
+  "location": "",
+  "description": "PARODY",
+  "url": null,
+  "entities": {
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 135782,
+  "friends_count": 417,
+  "listed_count": 375,
+  "created_at": "Fri Oct 12 00:18:42 +0000 2012",
+  "favourites_count": 145,
+  "utc_offset": 39600,
+  "time_zone": "New Caledonia",
+  "geo_enabled": true,
+  "verified": false,
+  "statuses_count": 317,
+  "lang": "en",
+  "status": {
+    "created_at": "Sun Jul 13 21:36:13 +0000 2014",
+    "id": 488436763057471490,
+    "id_str": "488436763057471490",
+    "text": "Congratulations #GER -- CHAMPIONS OF THE 2014 WORLD CUP! http://t.co/ueHAP0mBlW",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "GER",
+          "indices": [
+            16,
+            20
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 488436761815576578,
+          "id_str": "488436761815576578",
+          "indices": [
+            57,
+            79
+          ],
+          "media_url": "http://pbs.twimg.com/media/BsdGpaNCcAIV66v.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/BsdGpaNCcAIV66v.jpg",
+          "url": "http://t.co/ueHAP0mBlW",
+          "display_url": "pic.twitter.com/ueHAP0mBlW",
+          "expanded_url": "https://twitter.com/World/status/488436763057471490/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 962,
+              "h": 541,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 962,
+              "h": 541,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 382,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 488436761815576578,
+          "id_str": "488436761815576578",
+          "indices": [
+            57,
+            79
+          ],
+          "media_url": "http://pbs.twimg.com/media/BsdGpaNCcAIV66v.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/BsdGpaNCcAIV66v.jpg",
+          "url": "http://t.co/ueHAP0mBlW",
+          "display_url": "pic.twitter.com/ueHAP0mBlW",
+          "expanded_url": "https://twitter.com/World/status/488436763057471490/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 962,
+              "h": 541,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 962,
+              "h": 541,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 382,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 11228,
+    "favorite_count": 6144,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "FFFFFF",
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme8/bg.gif",
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme8/bg.gif",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/577253864425934848/mN4txFWZ_normal.jpeg",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/577253864425934848/mN4txFWZ_normal.jpeg",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/874589102/1426463211",
+  "profile_link_color": "DD2E44",
+  "profile_sidebar_border_color": "FFFFFF",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": false,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
+{
+  "id": 303739857,
+  "id_str": "303739857",
+  "name": "BSC-CNS",
+  "screen_name": "BSC_CNS",
+  "location": "Barcelona ",
+  "description": "BSC-CNS (Barcelona Supercomputing Center-Centro Nacional de Supercomputaci\u00f3n) is the National Supercomputing Facility in Spain.",
+  "url": "http://t.co/sRoZ19YFdV",
+  "entities": {
+    "url": {
+      "urls": [
+        {
+          "url": "http://t.co/sRoZ19YFdV",
+          "expanded_url": "http://www.bsc.es",
+          "display_url": "bsc.es",
+          "indices": [
+            0,
+            22
+          ]
+        }
+      ]
+    },
+    "description": {
+      "urls": []
+    }
+  },
+  "protected": false,
+  "followers_count": 4828,
+  "friends_count": 1275,
+  "listed_count": 297,
+  "created_at": "Mon May 23 10:43:23 +0000 2011",
+  "favourites_count": 3903,
+  "utc_offset": -10800,
+  "time_zone": "Greenland",
+  "geo_enabled": true,
+  "verified": false,
+  "statuses_count": 7458,
+  "lang": "es",
+  "status": {
+    "created_at": "Tue Mar 13 18:17:16 +0000 2018",
+    "id": 973624046347784192,
+    "id_str": "973624046347784192",
+    "text": "RT @FrancescIllas: @IQTCUB, @UniBarcelona, @PRACE_RI, @BSC_CNS, #RecercaUB. In search of a photocatalyst to get hydrogen from water with vi\u2026",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "RecercaUB",
+          "indices": [
+            64,
+            74
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "FrancescIllas",
+          "name": "Francesc Illas",
+          "id": 576253210,
+          "id_str": "576253210",
+          "indices": [
+            3,
+            17
+          ]
+        },
+        {
+          "screen_name": "IQTCUB",
+          "name": "IQTCUB",
+          "id": 960270007,
+          "id_str": "960270007",
+          "indices": [
+            19,
+            26
+          ]
+        },
+        {
+          "screen_name": "UniBarcelona",
+          "name": "Universitat de Barcelona",
+          "id": 188725330,
+          "id_str": "188725330",
+          "indices": [
+            28,
+            41
+          ]
+        },
+        {
+          "screen_name": "PRACE_RI",
+          "name": "PRACE",
+          "id": 334016754,
+          "id_str": "334016754",
+          "indices": [
+            43,
+            52
+          ]
+        },
+        {
+          "screen_name": "BSC_CNS",
+          "name": "BSC-CNS",
+          "id": 303739857,
+          "id_str": "303739857",
+          "indices": [
+            54,
+            62
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Tue Mar 13 18:03:32 +0000 2018",
+      "id": 973620591596097536,
+      "id_str": "973620591596097536",
+      "text": "@IQTCUB, @UniBarcelona, @PRACE_RI, @BSC_CNS, #RecercaUB. In search of a photocatalyst to get hydrogen from water wi\u2026 https://t.co/sfBZbncWkD",
+      "truncated": true,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "RecercaUB",
+            "indices": [
+              45,
+              55
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "IQTCUB",
+            "name": "IQTCUB",
+            "id": 960270007,
+            "id_str": "960270007",
+            "indices": [
+              0,
+              7
+            ]
+          },
+          {
+            "screen_name": "UniBarcelona",
+            "name": "Universitat de Barcelona",
+            "id": 188725330,
+            "id_str": "188725330",
+            "indices": [
+              9,
+              22
+            ]
+          },
+          {
+            "screen_name": "PRACE_RI",
+            "name": "PRACE",
+            "id": 334016754,
+            "id_str": "334016754",
+            "indices": [
+              24,
+              33
+            ]
+          },
+          {
+            "screen_name": "BSC_CNS",
+            "name": "BSC-CNS",
+            "id": 303739857,
+            "id_str": "303739857",
+            "indices": [
+              35,
+              43
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/sfBZbncWkD",
+            "expanded_url": "https://twitter.com/i/web/status/973620591596097536",
+            "display_url": "twitter.com/i/web/status/9\u2026",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": 960270007,
+      "in_reply_to_user_id_str": "960270007",
+      "in_reply_to_screen_name": "IQTCUB",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "contributors_enabled": false,
+  "is_translator": false,
+  "is_translation_enabled": false,
+  "profile_background_color": "131516",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/676430777/c956f6038ae7087357eea3cf67da5906.jpeg",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/676430777/c956f6038ae7087357eea3cf67da5906.jpeg",
+  "profile_background_tile": false,
+  "profile_image_url": "http://pbs.twimg.com/profile_images/378800000692705583/015be2057821ebe8382c21804a8504fc_normal.png",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000692705583/015be2057821ebe8382c21804a8504fc_normal.png",
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/303739857/1516791863",
+  "profile_link_color": "89C9FA",
+  "profile_sidebar_border_color": "FFFFFF",
+  "profile_sidebar_fill_color": "EFEFEF",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "has_extended_profile": false,
+  "default_profile": false,
+  "default_profile_image": false,
+  "following": true,
+  "live_following": false,
+  "follow_request_sent": false,
+  "notifications": false,
+  "muting": false,
+  "blocking": false,
+  "blocked_by": false,
+  "translator_type": "none"
+}
