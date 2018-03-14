@@ -68,4 +68,8 @@ auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
    -   Printing the json format of a tweet status: [tweet_status.json](tweet_status.json).
    -   Printing the json format of 10 friend in the twiteer profile: [tw_friends.json](tw_friends.json).
    -   Analysing the json format of our own tweets: [tweet.json](tweet.json).
- 
+
+- [x] Analyzing tweets information by Natural Language processin.
+   -   Printing the tokens of the tweet.
+
+   ![Task 2.3.1](img/t231.png)

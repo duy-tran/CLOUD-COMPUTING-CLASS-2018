@@ -44,7 +44,7 @@ api = tweepy.API(auth)
 
 user = api.me()
 
-#'''
+'''
 #Tweet newsfeed
 for status in tweepy.Cursor(api.home_timeline).items(1):
     print(json.dumps(status._json, indent=2))
@@ -62,8 +62,8 @@ for tweet in tweepy.Cursor(api.user_timeline).items(1):
     print(json.dumps(tweet._json, indent=2))
 #'''
 
-'''
-#Preprocess 10 tweets in newsfeed
-for status in tweepy.Cursor(api.home_timeline).items(10):
+#'''
+#Preprocess 5 tweets in newsfeed
+for status in tweepy.Cursor(api.home_timeline).items(5):
     print(preprocess(json.dumps(status._json["text"], indent=2)))
 #'''
