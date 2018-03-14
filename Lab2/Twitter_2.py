@@ -65,5 +65,6 @@ for tweet in tweepy.Cursor(api.user_timeline).items(1):
 #'''
 #Preprocess 5 tweets in newsfeed
 for status in tweepy.Cursor(api.home_timeline).items(5):
-    print(preprocess(json.dumps(status._json["text"], indent=2)))
+    print("Tweet's text: ", json.dumps(status._json["text"], indent=2))
+    print("Tokens: ", preprocess(status._json["text"]))
 #'''
