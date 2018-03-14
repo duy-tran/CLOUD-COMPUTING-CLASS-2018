@@ -57,11 +57,11 @@ auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
 
 **os.environ[key]** returns the value of that certain key in the Environment Variables configuration.
 
-- [x] Accessing profile data with tweepy with [Twitter_1.py]() script.
+- [x] Accessing profile data with tweepy with [Twitter_1.py](Twitter_1.py) script.
 
 ![Task 2.2.1](img/t221.png)
 
-- [x] Tweets data can be accessed in multiple ways.
+- [x] [Twitter_2.py](Twitter_2.py) script shows that tweets data can be accessed in multiple ways.
    -   Accessing one tweet text:
 
    ![One tweet text](img/t2221.png)
@@ -70,8 +70,45 @@ auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
    -   Printing the json format of 10 friend in the twiteer profile: [tw_friends.json](tw_friends.json).
    -   Analysing the json format of our own tweets: [tweet.json](tweet.json).
 
-- [x] Analyzing tweets information by Natural Language processin.
+- [x] Analyzing tweets information by Natural Language processing.
    -   Printing the tokens of the tweet.
 
    ![Task 2.3.1](img/t231.png)
    The complete text can also be accessed in [tweet_tokens.txt](tweet_tokens.txt)
+
+   -   We also tried a more detailed analysis to get the most common topic in the newsfeed. We tried to achieve this by analysing (as we did in the first NLTK part) the words in the text. For a better understanding of the results we deleted the stopwords and punctuation. We needed to add some new code to filter the text.
+
+   ```python
+   import nltk
+   from nltk.corpus import stopwords
+   from collections import Counter
+   import string
+
+   nltk.download('stopwords')
+
+   #creating the final list of discarded words or punctuation
+   punctuation = list(string.punctuation)
+   stop = punctuation + stopwords.words('spanish') + stopwords.words('english') + ['rt', 'via', '…', 'RT', '‘'] + ['ón', 'és', 'i', 'ó', '', 'els']
+   ```
+   This last snippet is creating the stop list with stopwords for spanish and english adding some specials chars and custom catalan stopwords.
+
+   ```python
+   #New process to get the tweet text, preprocess them and count them (without the stopwords)
+   #'''
+   #Analyze the 10 most common words used in the newsfeed
+   totalCount = Counter()
+   for status in tweepy.Cursor(api.home_timeline).items(40):
+      print("Tokens: ", preprocess(status._json["text"], True))
+      words_all = [word for word in preprocess(status._json['text'], True) if word not in stop]
+      totalCount.update(words_all)
+   print(totalCount.most_common(10))
+   #'''
+   ```
+
+   Note that we used the second optional parameter of the function **preprocess** to lower all the tokens so that we can compared with the stopwords list.
+   As an example of output we obtained this:
+
+   ```
+   [('#barçachelsea', 4), ('🔵', 4), ('🔴', 4), ('3', 3), ('santos', 2), ('sec', 2), ('charged', 2), ('theranos', 2), ('founder', 2), ('elizabeth', 2)]
+   ```   
+   Looks like [@marcgarnica](https://twitter.com/marc_garnica) is really following FCs Barcelona news!

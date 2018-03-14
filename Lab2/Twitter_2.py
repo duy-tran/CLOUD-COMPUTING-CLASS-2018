@@ -1,9 +1,19 @@
+import nltk
 import tweepy
 import json
 import os
 import re
 from tweepy import OAuthHandler
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from collections import Counter
+import string
+
+nltk.download('stopwords')
+
+#creating the final list of discarded words or punctuation
+punctuation = list(string.punctuation)
+stop = punctuation + stopwords.words('spanish') + stopwords.words('english') + ['rt', 'via', '…', 'RT', '‘'] + ['ón', 'és', 'i', 'ó', '', 'els']
 
 emoticons_str = r"""
     (?:
@@ -62,9 +72,19 @@ for tweet in tweepy.Cursor(api.user_timeline).items(1):
     print(json.dumps(tweet._json, indent=2))
 #'''
 
-#'''
+'''
 #Preprocess 5 tweets in newsfeed
-for status in tweepy.Cursor(api.home_timeline).items(5):
+for status in tweepy.Cursor(api.home_timeline).items(10):
     print("Tweet's text: ", json.dumps(status._json["text"], indent=2))
     print("Tokens: ", preprocess(status._json["text"]))
+#'''
+
+#'''
+#Analyze the 10 most common words used in the newsfeed
+totalCount = Counter()
+for status in tweepy.Cursor(api.home_timeline).items(40):
+    print("Tokens: ", preprocess(status._json["text"], True))
+    words_all = [word for word in preprocess(status._json['text'], True) if word not in stop]
+    totalCount.update(words_all)
+print(totalCount.most_common(10))
 #'''

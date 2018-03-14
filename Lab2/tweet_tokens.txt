@@ -1,6 +1,10 @@
-['"', 'G', '\\', 'u26bd', '\\', 'ufe', '0', 'fAL', 'MORNING', '!', '!', '!', '\\', 'n', '\\', 'ud83d', '\\', 'udd', '19', '@Guaje7Villa', '\\', 'n', '\\', 'ud83c', '\\', 'udd', '9', 'a', 'Osasuna', 'https://t.co/1eyJMPgxwL', '"']
-['"', 'G', '\\', 'u26bd', '\\', 'ufe', '0', 'fAL', 'MORNING', '!', '!', '!', '\\', 'n', '\\', 'ud83d', '\\', 'udd', '19', '@Guaje7Villa', '\\', 'n', '\\', 'ud83c', '\\', 'udd', '9', 'a', 'Osasuna', 'https://t.co/QaZewQho45', '"']
-['"', 'Los', '350.000', 'd', '\\', 'u00f3lares', 'de', 'Ninja', 'por', 'jugar', 'a', 'Fortnite', 'Battle', 'Royale', '\\', 'nhttps', ':/', '/', 't', '.', 'co', '/', 'Fnwy', '58', 'aMiU', '#eSports', 'https://t.co/i8khlmKXlN', '"']
-['"', 'RT', '@OtroMundoMD', ':', 'Neymar', 'y', 'Bruna', 'Marquezine', 'se', 'casar', '\\', 'u00e1n', 'en', 'Brasil', '\\', 'n', 'https://t.co/Y5tzmhj5oZ', 'https://t.co/QFvDEw4IWI', '"']
-['"', 'Se', 'admiten', 'ofertas', ':', 'el', 'PSG', 'dejar', '\\', 'u00e1', 'salir', 'a', 'Verratti', 'este', 'verano', '\\', 'nhttps', ':/', '/', 't', '.', 'co', '/', 'cnFAMOifxD', '"']
-
+Tweet's text:  "Messi-Cesc, enemigos \u00edntimos: Ambos cracks, amigos desde que coincidieran en La Masia, vuelven a enfrentarse\u2026 https://t.co/d5QW9TD9Pa"
+Tokens:  ['Messi-Cesc', ',', 'enemigos', 'íntimos', ':', 'Ambos', 'cracks', ',', 'amigos', 'desde', 'que', 'coincidieran', 'en', 'La', 'Masia', ',', 'vuelven', 'a', 'enfrentarse', '…', 'https://t.co/d5QW9TD9Pa']
+Tweet's text:  "Jewelry site accidentally leaks personal details (and plaintext passwords!) of 1.3M users https://t.co/Ygob008X5r"
+Tokens:  ['Jewelry', 'site', 'accidentally', 'leaks', 'personal', 'details', '(', 'and', 'plaintext', 'passwords', '!', ')', 'of', '1.3', 'M', 'users', 'https://t.co/Ygob008X5r']
+Tweet's text:  "La culebra rayada ahoga a las hembras para obligarlas a copular."
+Tokens:  ['La', 'culebra', 'rayada', 'ahoga', 'a', 'las', 'hembras', 'para', 'obligarlas', 'a', 'copular', '.']
+Tweet's text:  "La quiniela del Barcelona - Chelsea: \u00bfTer Stegen o Courtois? \u00bfRakitic o Cesc? \u00bfSu\u00e1rez o Hazard?\u2026 https://t.co/dYxGJRZFdb"
+Tokens:  ['La', 'quiniela', 'del', 'Barcelona', '-', 'Chelsea', ':', '¿', 'Ter', 'Stegen', 'o', 'Courtois', '?', '¿', 'Rakitic', 'o', 'Cesc', '?', '¿', 'Suárez', 'o', 'Hazard', '?', '…', 'https://t.co/dYxGJRZFdb']
+Tweet's text:  "\u23f0 SURPRISE! In honor of a good cause, I'll be on Facebook Live TODAY @ 1pm CT, 7pm CET.\n\n\u23f0 \u00a1SORPRESA! HOY estar\u00e9 co\u2026 https://t.co/NysOj565DI"
+Tokens:  ['⏰', 'SURPRISE', '!', 'In', 'honor', 'of', 'a', 'good', 'cause', ',', "I'll", 'be', 'on', 'Facebook', 'Live', 'TODAY', '@', '1', 'pm', 'CT', ',', '7', 'pm', 'CET', '.', '⏰', '¡', 'SORPRESA', '!', 'HOY', 'estar', 'é', 'co', '…', 'https://t.co/NysOj565DI']
