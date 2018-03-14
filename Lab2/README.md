@@ -73,3 +73,4 @@ auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
    -   Printing the tokens of the tweet.
 
    ![Task 2.3.1](img/t231.png)
+   The complete text can also be accessed in [tweet_tokens.txt](tweet_tokens.txt)
