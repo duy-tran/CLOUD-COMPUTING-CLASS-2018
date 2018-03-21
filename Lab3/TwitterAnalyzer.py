@@ -1,6 +1,7 @@
 import json
 import nltk
 import string
+import os
 
 from Lab2.Twitter_2 import preprocess
 
@@ -12,7 +13,7 @@ punctuation = list(string.punctuation)
 stop = punctuation + stopwords.words('spanish') + stopwords.words('english') + ['rt', 'via', '…', 'RT', '‘'] + ['ón', 'és', 'i', 'ó', '', 'els']
 
 
-with open('AnalyticsTweets.json', 'r') as json_file:
+with open(os.environ['FILENAME'], 'r') as json_file:
     count_all = Counter()
     count_stop = Counter()
     count_hash = Counter()

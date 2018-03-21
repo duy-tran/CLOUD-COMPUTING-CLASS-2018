@@ -8,7 +8,7 @@ class MyListener(StreamListener):
 
     def on_data(self, data):
         try:
-            with open('ArtificialIntelligenceTweets.json', 'a') as f:
+            with open(os.environ['FILENAME'], 'a') as f:
                 f.write(data)
                 return True
         except BaseException as e:
@@ -23,5 +23,4 @@ auth = OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
 auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
 
 twitter_stream = Stream(auth, MyListener())
-twitter_stream.filter(track=['ArtificialIntelligence'])
-
+twitter_stream.filter(track=[os.environ['FILTER_KW']])
