@@ -32,6 +32,8 @@ plt.bar(range(len(sorted_x)), sorted_y, width=0.75, align='center')
 plt.xticks(range(len(sorted_x)), sorted_x, rotation=60)
 plt.axis('tight')
 
-plt.show()                  # show it on IDE
 
 plt.savefig('CaseStudy.png')     # save it on a file
+
+##Show needs to come after savefig, if not the image on the local drive was blank.
+plt.show()                  # show it on IDE
