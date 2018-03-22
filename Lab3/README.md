@@ -8,7 +8,7 @@ Group 1207
 
 -   Marc Garnica Caparros - marcgarnicacaparros\@gmail.com
 
-Assignment link: [Lab 2 Assignment](https://github.com/CCBDA-UPC/Assignments-2018/blob/master/Lab03.md)
+Assignment link: [Lab 3 Assignment](https://github.com/CCBDA-UPC/Assignments-2018/blob/master/Lab03.md)
 
 ## Objectives
 
