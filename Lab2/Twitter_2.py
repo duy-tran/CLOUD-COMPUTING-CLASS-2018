@@ -79,7 +79,7 @@ for status in tweepy.Cursor(api.home_timeline).items(10):
     print("Tokens: ", preprocess(status._json["text"]))
 #'''
 
-#'''
+'''
 #Analyze the 10 most common words used in the newsfeed
 totalCount = Counter()
 for status in tweepy.Cursor(api.home_timeline).items(40):
