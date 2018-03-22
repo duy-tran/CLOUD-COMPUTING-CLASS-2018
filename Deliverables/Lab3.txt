@@ -5,4 +5,5 @@ Marc Garnica Caparrós - marcgarnicacaparros@gmail.com
 
 Group repository -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018 
 Lab3 repository folder -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/tree/master/Lab3
+Student proposal: Madrid compared to Barcelona -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/raw/master/Lab3/Madrid.json
 
