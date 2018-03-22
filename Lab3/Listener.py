@@ -23,4 +23,5 @@ auth = OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
 auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
 
 twitter_stream = Stream(auth, MyListener())
+
 twitter_stream.filter(track=[os.environ['FILTER_KW']])
