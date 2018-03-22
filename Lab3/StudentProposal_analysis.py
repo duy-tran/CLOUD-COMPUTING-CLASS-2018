@@ -8,9 +8,9 @@ from nltk.corpus import stopwords
 nltk.download("stopwords") # download the stopword corpus on our computer
 
 punctuation = list(string.punctuation)
-stop = stopwords.words('english') + stopwords.words('spanish') + punctuation + ['rt', 'via', 'RT', '…', 'amp', "ा",'🤣', 'I', '’', '่', 'ี', '\u200d', '🏻', ""'ิ'""]
+stop = stopwords.words('english') + stopwords.words('spanish') + punctuation + ['rt', 'via', 'RT', '…', '#', 'ี', '️', '¿', '¡', '’']
 
-fname = 'ds.json'
+fname = 'Madrid.json'
 with open(fname, 'r') as json_file:
         count_all = Counter()
         count_stop = Counter()
@@ -30,7 +30,7 @@ with open(fname, 'r') as json_file:
                       word not in stop and not word.startswith(('#', '@'))]
 
             # List of all hashtags
-            t_hash = [hash for hash in preprocess(tweet['text']) if hash.startswith('#')]
+            t_hash = [hash for hash in preprocess(tweet['text']) if hash.startswith('#') and hash not in stop]
 
             # Lis of all mentions
             t_mention = [mention for mention in preprocess(tweet['text']) if mention.startswith('@')]
@@ -52,7 +52,7 @@ import matplotlib as mpl
 mpl.rcParams['figure.figsize'] = (6,6)
 import matplotlib.pyplot as plt
 
-sorted_x, sorted_y = zip(*count_stop.most_common(20))
+sorted_x, sorted_y = zip(*count_hash.most_common(20))
 print(sorted_x, sorted_y)
 
 plt.bar(range(len(sorted_x)), sorted_y, width=0.75, align='center')
@@ -60,7 +60,7 @@ plt.xticks(range(len(sorted_x)), sorted_x, rotation=60)
 plt.axis('tight')
 
 
-plt.savefig('ds.png')     # save it on a file
+# plt.savefig('Madrid.png')     # save it on a file
 
 ##Show needs to come after savefig, if not the image on the local drive was blank.
 plt.show()                  # show it on IDE
