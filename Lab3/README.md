@@ -59,7 +59,7 @@ Each line of the file contains a tweet containing the filter keyword on its text
 
 As we can really see from the picture and the most common hashtags observed, the city of barcelona is mainly quoted on Twitter feed due to the football team Futbol Club Barcelona. Even though being huge football fans in this group, we agree that Barcelona has way much more interesting things to be known about.
 
-- [x] **Student proposal:** Last but not least, we implemented a short but detailed analysis on the appearance of the word _Madrid_ in twitter data. Our first objective was to identify where the main sources of modern business are and the relation between them, regarding the twitter data. We used the knowledge obtained from this session:
+- [x] **Student proposal:** Last but not least, we implemented a short but detailed analysis on the appearance of the word _Madrid_ in twitter data. Our first objective was to identify where the main sources of data were linked with the city of Madrid and what was more interesting how this was compared to the Barcelona data set used in the case study. We used the knowledge obtained from this session:
    - [Listener.py](Listener.py) configured to track _Madrid_ and store the tweets in the file [Madrid.json](Madrid.json).
    - [StudentProposal_analysis.py](StudentProposal_analysis.py) is opening the file and counting the interesting terms and hashtags present in the tweet text.
 
@@ -75,7 +75,9 @@ As we can really see from the picture and the most common hashtags observed, the
    - Finally this was the analysis extracted from the data.
 
 <p align="center">
-  <img src="Madrid.png">
+     <img src="Madrid.png">
 </p>
 
-Comparing to the previous example of analyzing the word _Barcelona,_ it is showed that tweets regarding _Madrid_ has a wider range of interests, from music to politics, while hashtag of the famous football team Real Madrid is ranked low in the chart. Interestingly, #Barcelona and #GerardPiq (Gerard Pique is an FC Barcelona's player) made to the list, this can be due to the rivalry between the two greatest clubs in Spain (or in the world). 
+   Comparing to the previous example of analyzing the word _Barcelona,_ it is showed that tweets regarding _Madrid_ has a wider range of interests, from music to politics, while hashtag of the famous football team Real Madrid is ranked low in the chart. Can it be that Madrid is more than football team, while Barcelona is eclipsed by the sports comunity? Or this is only a fact that FCBarcelona has way more international impact than Real Madrid?
+
+   Interestingly, #Barcelona and #GerardPiq (Gerard Pique is an FC Barcelona's player) made to the list, this can be due to the rivalry between the two greatest clubs in Spain (or in the world). 
