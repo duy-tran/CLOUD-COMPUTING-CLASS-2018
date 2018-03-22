@@ -57,13 +57,13 @@ Each line of the file contains a tweet containing the filter keyword on its text
   <img src="CaseStudy.png">
 </p>
 
-As we can really see from the picture and the most common hashtags observed, the city of barcelona is mainly quoted on Twitter feed due to the football team Futbol Club Barcelona. Even though being huge footbal fans in this group, we agree that Barcelona has way much more interesting things to be known about.
+As we can really see from the picture and the most common hashtags observed, the city of barcelona is mainly quoted on Twitter feed due to the football team Futbol Club Barcelona. Even though being huge football fans in this group, we agree that Barcelona has way much more interesting things to be known about.
 
 - [x] **Student proposal:** Last but not least, we implemented a short but detailed analysis on the appearance of the word _business_ in twitter data. Our first objective was to identify where the main sources of modern business are and the relation between them, regarding the twitter dat. We used the knowledge obtained from this session:
    - [Listener.py](Listener.py) configured to track _business_ and store the tweets in the file [business.json](business.json).
    - [StudentProposal_analysis.py](StudentProposal_analysis.py) is opening the file and counting the interesting terms and hashtags present in the tweet text.
 
-   We adjusted the stopwords list follows: for our interests as it follows:
+   We adjusted the stopwords list for our interests as it follows:
    ```python
    nltk.download("stopwords") # download the stopword corpus on our computer
 
@@ -73,5 +73,3 @@ As we can really see from the picture and the most common hashtags observed, the
    ```
 
    - Finally this was the analysis extracted from the data.
-
-   
