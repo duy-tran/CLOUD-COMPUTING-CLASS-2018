@@ -74,10 +74,19 @@ As we can really see from the picture and the most common hashtags observed, the
 
    - Finally this was the analysis extracted from the data.
 
+          ------RESULT-------
+          Number of tweets analyzed: 11529
+         Top 10 token appearences -> [(':', 9983), ('de', 9107), ('RT', 7883), ('…', 7544), ('.', 6431), ('Madrid', 5999), (',', 5657), ('en', 4814), ('la', 4411), ('a', 4297)]
+         Top 20 word appearences (without stopwords) -> [('madrid', 6501), ('real', 2014), ('ón', 1460), ('á', 672), ('barcelona', 643), ('ó', 620), ('ña', 614), ('ía', 599), ('é', 593), ('est', 590), ('espa', 583), ('si', 582), ('😂', 541), ('cifuentes', 524), ('whatsapp', 515), ('pique', 442), ('players', 396), ('gerard', 373), ('julio', 355), ('comunidad', 349)]
+         Top 20 hashtag appearences -> [('#Madrid', 538), ('#LaliEnVivo', 331), ('#Aena', 148), ('#Barcelona', 122), ('#PlenoMadrid', 83), ('#20m', 75), ('#madrid', 63), ('#Lalienvivo', 51), ('#ÚltimaHora', 45), ('#policiademadridbajominimos', 44), ('#Lavapiés', 42), ('#cifuentes', 39), ('#empleo', 37), ('#LaRazónTv', 30), ('#EquiparaciónYA', 30), ('#trabajo', 30), ('#Nuestros11Romanticos', 28), ('#GerardPiq', 25), ('#RealMadrid', 24), ('#ÚLTIMAHORA', 24)]
+         Top 20 mention appearences -> [('@laliespos', 476), ('@brfootball', 210), ('@ccifuentes', 196), ('@javierbarberog', 159), ('@Asl_MCMXCIII', 150), ('@MADRID', 148), ('@eldiarioes', 124), ('@begonavillacis', 123), ('@AhoraMadrid', 121), ('@RMadrid_FR', 106), ('@policiademadrid', 101), ('@TonyAguilarOfi', 101), ('@GoalsGif', 99), ('@ManuelaCarmena', 95), ('@CuriosodeFutbol', 91), ('@InfosFuteboI', 91), ('@40GlobalShow', 88), ('@Cs_Madrid', 87), ('@jorgepsuv', 75), ('@PabloMM', 74)]
+         ('#Madrid', '#LaliEnVivo', '#Aena', '#Barcelona', '#PlenoMadrid', '#20m', '#madrid', '#Lalienvivo', '#ÚltimaHora', '#policiademadridbajominimos', '#Lavapiés', '#cifuentes', '#empleo', '#LaRazónTv', '#EquiparaciónYA', '#trabajo', '#Nuestros11Romanticos', '#GerardPiq', '#RealMadrid', '#ÚLTIMAHORA') (538, 331, 148, 122, 83, 75, 63, 51, 45, 44, 42, 39, 37, 30, 30, 30, 28, 25, 24, 24)
+
+
 <p align="center">
      <img src="Madrid.png">
 </p>
 
    Comparing to the previous example of analyzing the word _Barcelona,_ it is showed that tweets regarding _Madrid_ has a wider range of interests, from music to politics, while hashtag of the famous football team Real Madrid is ranked low in the chart. Can it be that Madrid is more than football team, while Barcelona is eclipsed by the sports comunity? Or this is only a fact that FCBarcelona has way more international impact than Real Madrid?
 
-   Interestingly, #Barcelona and #GerardPiq (Gerard Pique is an FC Barcelona's player) made to the list, this can be due to the rivalry between the two greatest clubs in Spain (or in the world). 
+   Interestingly, #Barcelona and #GerardPiq (Gerard Pique is an FC Barcelona's player) made to the list, this can be due to the rivalry between the two greatest clubs in Spain (or in the world).
