@@ -8,9 +8,9 @@ from nltk.corpus import stopwords
 nltk.download("stopwords") # download the stopword corpus on our computer
 
 punctuation = list(string.punctuation)
-stop = stopwords.words('english') + punctuation + ['rt', 'via', 'RT', '…', 'business', 'Business', 'amp', "ा",'🤣', 'I', '’', '่', 'ี', '\u200d', '🏻', ""'ิ'""]
+stop = stopwords.words('english') + stopwords.words('spanish') + punctuation + ['rt', 'via', 'RT', '…', 'business', 'Business', 'amp', "ा",'🤣', 'I', '’', '่', 'ี', '\u200d', '🏻', ""'ิ'""]
 
-fname = 'business.json'
+fname = 'ds.json'
 with open(fname, 'r') as json_file:
         count_all = Counter()
         count_stop = Counter()
@@ -60,7 +60,7 @@ plt.xticks(range(len(sorted_x)), sorted_x, rotation=60)
 plt.axis('tight')
 
 
-plt.savefig('business.png')     # save it on a file
+plt.savefig('ds.png')     # save it on a file
 
 ##Show needs to come after savefig, if not the image on the local drive was blank.
 plt.show()                  # show it on IDE
