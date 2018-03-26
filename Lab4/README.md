@@ -70,7 +70,13 @@ This session uses AWS Elastic Beanstalk to build a small webapp using Django and
   The configuration was saved for future deployments.
 
 
-MISSING:
--  Go to your EC2 console and check the EC2 instance that AWS uses for the Elastic Beanstalk environment. Terminate the instance. Check what happens in your EBS console. Wait a couple of minutes and check again your EC2 console. What has happened? Why do you think that has happened? Add your responses to README.md.
 
--  Now, to save expenses, you can terminate your environment, this time from the EBS console. What has happened? Why do you think that has happened? Check both EC2 and EBS consoles. Add your responses to README.md.
+-  [x] Go to your EC2 console and check the EC2 instance that AWS uses for the Elastic Beanstalk environment. Terminate the instance. Check what happens in your EBS console. Wait a couple of minutes and check again your EC2 console. What has happened? Why do you think that has happened? 
+
+ After terminating the EC2 instance in EC2 console, it had been removed from environment since Beanstalk treat the instane as being crashed, environment health went from OK to Severe because there were no instances running. After a few minutes, it has added a new instance automatically and health went back to OK, the website is up again. This happens because environment type (Auto Scaling) has set the minimum instance to 1, meaning it ensures there's always at least 1 instance running.
+
+![Auto sclaing](img/term-ec2.png)
+
+-  [x] Now, to save expenses, you can terminate your environment, this time from the EBS console. What has happened? Why do you think that has happened? Check both EC2 and EBS consoles.
+
+ When environment is starting to terminate, it removes the auto scaling group policy then terminates the running EC2 instance, and finally terminate the environment. The auto scaling policy was removed first in order to prevent it from adding new EC2 instance.
