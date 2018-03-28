@@ -16,7 +16,8 @@ Webapp repository: [Django express webapp](https://github.com/marcgarnica13/eb-d
 The following README summarizes the tasks done during the fourth lab session
 of the Cloud Computing for Big Data Analytics course in Universitat Politècnica
 de Catalunya. For project delivery and recovery of information during the course evolution.
-This session uses AWS Elastic Beanstalk to build a small webapp using Django and DynamoDB. This repository only includes the comments, answers and screenshots of the session but the implementation of the app can be found in the linked [repository](https://github.com/marcgarnica13/eb-django-express-singup-base). During the following session this repository will keep track of the modifications and updates of the webapp.
+
+This session uses AWS Elastic Beanstalk to build a small webapp using Django and DynamoDB. This repository only includes the comments, answers and screenshots of the session but the implementation of the app can be found in the linked [repository](https://github.com/marcgarnica13/eb-django-express-singup-base). During the following sessions this repository will keep track of the modifications and updates of the webapp.
 
 ### Pre-lab homeworks
 
@@ -69,12 +70,36 @@ This session uses AWS Elastic Beanstalk to build a small webapp using Django and
 
   The configuration was saved for future deployments.
 
--  [x] **First check:** Terminating the EC2 instance that the AWS uses fot the Elastic Beanstalk environment.What has happened? Why do you think that has happened? 
+-  [x] **First check:** Terminating the EC2 instance that the AWS uses fot the Elastic Beanstalk environment.What has happened? Why do you think that has happened?
 
- After terminating the EC2 instance in EC2 console, it had been removed from environment since Beanstalk treat the instane as being crashed, environment health went from OK to Severe because there were no instances running. After a few minutes, it has added a new instance automatically and health went back to OK, the website is up again. This happens because environment type (Auto Scaling) has set the minimum instance to 1, meaning it ensures there's always at least 1 instance running.
+ After terminating the EC2 instance in EC2 console, the AWS console first of all warns us indicating that this instances is being used by an EB environment.this is just to point that this action will imply problems on the Elastic Beanstalk environment.
 
-![Auto sclaing](img/term-ec2.png)
+ ![Terminate EC2 warn](img/warning.png)
 
--  [x] **Second check:** Terminate the environment from the EBS console.What has happened? Why do you think that has happened? Check both EC2 and EBS consoles.
+ Looking at the EB console, we can see that the instance is captured as crashed and the environment health went from OK to Severe because there were no instances running.
 
- When environment is starting to terminate, it removes the auto scaling group policy then terminates the running EC2 instance, and finally terminate the environment. The auto scaling policy was removed first in order to prevent it from adding new EC2 instance.
+ ![Health severe](img/severe.png)
+
+ After a few minutes, it has added a new instance automatically and health went back to OK, the website is up again. This happens because environment type (Auto Scaling) has set the minimum instance to 1, meaning it ensures there's always at least 1 instance running.
+
+ ![Ok](img/ok_1.png)
+
+ ![Auto scaling](img/term-ec2.png)
+
+  Loooking back again to the EC2 console we can see that the terminated instance is still there in terminated status but a new one has been added serving the EB console.
+
+  ![New EC2](img/ec2_console.png)
+
+-  [x] **Second check:** Terminate the environment from the EBS console.What has happened? Why do you think that has happened? Check both EC2 and EB consoles.
+
+ The console shows a confirmation dialog indicating the release of the domain used for the environment the termination of all the additional resources associated, for instance, the EC2 instance.
+
+ ![Confirmation dialog](img/terminate_eb.png)
+
+ After confirmig the terminate action, this are the actions that the EB console runs:
+
+ ![Termination eb](img/termination_eb.png)
+
+ As it is shown in the last picture, When environment is starting to terminate, it deletes de CloudWatch configured for the environment, it also removes the auto scaling group policy and then finally terminates the running EC2 instance. The auto scaling policy was removed first in order to prevent it from adding new EC2 instance.
+
+ When the EC2 terminates, the console deletes also the auto scaling and the load balancer to finally remove the environment. 
