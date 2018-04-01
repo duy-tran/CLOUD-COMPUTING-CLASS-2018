@@ -34,3 +34,29 @@ _Find reliable and trustworthy sources of information_, understand them and try 
 ## Submission
 
 PDF file with the 20 slides to the Racó with the GitHub URL by **May 8th 23:59**
+
+## Content proposal
+
+- Overview of Internet of Things:
+  - Definitions.
+- Architecture : Device - Gateway - Cloud (Pipelining and dataflow)
+- Type of information
+- Device:
+  - Definition
+  - Metadata
+  - State
+  - Commands/Interface
+  - Processing
+  - Management
+  - Manufacturers
+- Gateway
+- Cloud:
+  - Overview
+  - Architecture
+  - Ingestion
+  - Data storage
+  - Rule processing and streaming analytics
+  - Analytics.
+  - Archival Storage (API)
+- Providers (general)
+- Use cases
