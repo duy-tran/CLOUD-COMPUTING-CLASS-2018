@@ -187,3 +187,6 @@ Afther development this task two main conclusions have been extracted:
 -  [x] It is crucial for an architecutre design to keep in mind the amoun of data and the granularity in order to define the most efficient schema for the desired operations. Volume of data and predefined queries in our database are key points to consider during the software architecture design. There's no an always-optimal solution, each implementation has its own requirements.
 
 -  [x] AWS Lambda functions are providing to the developer a way of connecting nodes of their deployment without really adding dependencies and links on the main code. From now on, only that snipped of code developed have to be changed in order to change the aggregation on domain. Even more, other Lambda functions can be pipelined or attached to the chain to increase our features without modifying the core of our application.
+
+
+For more information and code explanation, the repository can be found [here](https://github.com/marcgarnica13/eb-django-express-singup-base/tree/optional).
