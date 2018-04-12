@@ -88,3 +88,14 @@ The [web app](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/) is deployed a
 <p align="center"><img src="./img/load.png" title="Files loaded"/ width="200"></p>
 
 #### Q55: How long have you been working on this session (including the optional part)? What have been the main difficulties you have faced and how have you solved them?
+### Difficulties faced during this session
+
+This session it has been equivalent to approximately 10 hours of work. The main difficulties faced where revealed thanks to the other class group on Tuesday. The reported the majority of the issues and helped our class group to go straight to the point in the session.
+
+Nevertheless, some of the links to Tutorials added in this session are using an outdated interface of AWS and some of the default configuration for setting up CDN and S3 required some research.
+
+All in all, the optional part was also time consuming due to the fact that there was nothing added previously on how to perform efficient aggregation on DynamoDB. We faced two main options:
+ 1- Changes the main code and every time a new lead is added through the django app, also update the aggregations manually.
+ 2- Use extra services to have the same effect without changing the core code.
+
+Option number 1 was definitely the most doable and fast but we decided to try with the components of AWS for better learning. Even though we added difficulty we think this can be very helpful for our project in the following months.
