@@ -99,6 +99,10 @@ To optimize this we required of some strategy to keep the counting of the domain
       return 'Successfully processed {} records.'.format(len(event['Records']))
 ```
 
+As explained, on every new item in the signup table the Lambda fucntion is updating the materialized aggregation present in the domain-signup table.
+
+![Updating domain table](img/opt/updating_domain.png)
+
 As we can see in the following picture, Lambda function are so useful to configure server-less functions and connect different elements of our architecture.
 
 ![Lambda function connections](img/opt/updateDomainCounter.png)
