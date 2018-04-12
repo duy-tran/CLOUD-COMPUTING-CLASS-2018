@@ -22,7 +22,7 @@ This session uses Simple Notification Service and CloudFront to enrich the servi
 
 ## Pre-lab homeworks
 
-The pre-lab homework requires to create a new IAM user and grant only sufficient permissions for deployment, initially only programmatic access and `gsg-signup-policy`. However, it was not enough to deploy on ElasticBeanstalk. The following policies were added: 
+The pre-lab homework requires to create a new IAM user and grant only sufficient permissions for deployment, initially only programmatic access and `gsg-signup-policy`. However, it was not enough to deploy on ElasticBeanstalk. The following policies were added:
 -   AWSElasticBeanstalkFullAccess - AWS Managed policy
 -   AWSElasticBeanstalkService - AWS Managed policy
 -   AWSCodeDeployRole - AWS Managed policy
@@ -49,19 +49,20 @@ New functions were added to _form/models.py_ and _form/views.py_ to send the not
 
 To create a new view, first we need to add a new URL in _form/urls.py_ and then write the controller in _forms/view.py_
 The new search view allows us to look for item in the DynamoDB, with Preview Access and email's domain name as parameters. To get these records, method `get_leads` is added to _forms/model.py_. The HTML file is in _form/templates/search.html_
-After saving all the changes, we have the working search page in the local web app 
+After saving all the changes, we have the working search page in the local web app
 
 ![Local search page](img/search_local.png)
 
 ![Search result](img/search_local_result.png)
 
 ### Task 5.3: Improve the web app transfer of information (optional)
+The full documentation on this task has been added in [Optimizaton.md](./Optimization.md) for readability of the assignment and to include all the necessary explanations for the task.
 
 ### Task 5.4: Deliver static content using a Content Delivery Network
 
 -  [x] The static content in our web app
 
-In this task, we use CSS to add custom style to the web. At first, it was imported locally in directory _static_. 
+In this task, we use CSS to add custom style to the web. At first, it was imported locally in directory _static_.
 
 ![Custom CSS](img/css.png)
 
@@ -79,11 +80,11 @@ Contents from Amazon S3 are delivered with CloudFront. They can be accessed thro
 
 ![CloudFront](img/cloudfront.png)
 
--  [x] Change the code and test links 
+-  [x] Change the code and test links
 
 In this part, we have used Django support for CDN, thus CSS file linking is still written by ` <link href="{% static 'custom.css' %}" rel="stylesheet">`, however the static directory is now referenced to our newly created CDN in the previous part.
 The [web app](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/) is deployed and function well.
 
-<p align="center"><img src="./img/load.png" title="Files loaded"/ width="200"></p> 
+<p align="center"><img src="./img/load.png" title="Files loaded"/ width="200"></p>
 
 #### Q55: How long have you been working on this session (including the optional part)? What have been the main difficulties you have faced and how have you solved them?
