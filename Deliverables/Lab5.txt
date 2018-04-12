@@ -1,0 +1,11 @@
+Group 1207
+
+Quang Duy Tran - duy9968@gmail.com
+Marc Garnica Caparrós - marcgarnicacaparros@gmail.com
+
+Group repository -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018 
+Lab5 repository folder -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/tree/master/Lab5
+Web application repository -> https://github.com/marcgarnica13/eb-django-express-singup-base
+Deployed application -> http://gsgsignup-j4mtn-env.eu-west-1.elasticbeanstalk.com/
+Running app locally in Ubuntu 16.04 and macOS Sierra.
+The optional part (5.3) has been indicated in the web application repository with a new branch called optional, all the documentation is added to the Lab5 repository folder
