@@ -82,8 +82,8 @@ Contents from Amazon S3 are delivered with CloudFront. They can be accessed thro
 -  [x] Change the code and test links 
 
 In this part, we have used Django support for CDN, thus CSS file linking is still written by ` <link href="{% static 'custom.css' %}" rel="stylesheet">`, however the static directory is now referenced to our newly created CDN in the previous part.
-The ![web app](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/) is deployed and function well.
+The [web app](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/) is deployed and function well.
 
-<p align="center"><img src="./img/load.png" title="Files loaded"/></p> 
+<p align="center"><img src="./img/load.png" title="Files loaded"/ width="200"></p> 
 
 #### Q55: How long have you been working on this session (including the optional part)? What have been the main difficulties you have faced and how have you solved them?
