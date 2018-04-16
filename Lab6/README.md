@@ -206,5 +206,11 @@ And consequently our interface *chart.html* was as follows:
 
   ![Eb query domain and preview](img/eb_chart_domainPreview.png)
 
+  - [x] After running a few queries on the browser the S3 bucket looked like this:
+
+  ![EB Bucket with files](img/s3_queries.png)
+
+    The bucket works as a REST API serving json files as resources. Knowing the file name, all the resourcesare publicly accessible in following this link [https://s3-eu-west-1.amazonaws.com/eb-dynamic/](https://s3-eu-west-1.amazonaws.com/eb-dynamic/)
+
 
 ### Task 6.2: How to provide our service combined with third-party services
