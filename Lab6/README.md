@@ -157,14 +157,14 @@ And consequently our interface *chart.html* was as follows:
 
     Notice that in order to provide a correct answer in any request we are not just using one file in the S3 bucket. This are the possible combinations for creating a file depending on the query:
 
-    | Domain | Preview | Filename |
-    | :---: | :---: | :---: |
-    | catalunya.cat | Yes  | catalunya.cat.Yes.json |
-    | -  | No  | No.json |
-    | gmail.com | - | gmail.com.json |
-    | - | - | all.json |
+| Domain | Preview | Filename |
+  | :---: | :---: | :---: |
+  | catalunya.cat | Yes  | catalunya.cat.Yes.json |
+  | -  | No  | No.json |
+  | gmail.com | - | gmail.com.json |
+  | - | - | all.json |
 
-    Aligned with that the *chart.html* file is now using the sent variable requestFileName to GET the file to parse for the chart plot:
+  - Aligned with that the *chart.html* file is now using the sent variable requestFileName to GET the file to parse for the chart plot:
 
     ```html
     {% load static %}
@@ -192,7 +192,7 @@ And consequently our interface *chart.html* was as follows:
     </html>
     ```
 
-    When running in localhost, we experienced some problems receivng a *403 Forbidden* code when GETTING the desired file from our S3 bucket. At first, we tried to solve to the CORS configurations but what really solved the problem was adding a policy to the bucket. Both policy and CORS can be seen in the following images.
+    When running in localhost, we experienced some problems receiving a *403 Forbidden* code when GETTING the desired file from our S3 bucket. At first, we tried to solve to the CORS configurations but what really solved the problem was adding a policy to the bucket. Both policy and CORS can be seen in the following images.
 
     ![CORS configuration](img/CORS.png)
 
@@ -269,11 +269,11 @@ def map(request):
     return render(request, 'map.html')
 ```
 
-- [x] Finally, the HTML file _forms/templates/map.html_ is created, getting Json data from the static folder.
+- [x] Finally, the HTML file _forms/templates/map.html_ is created, getting Json data from the static folder. Similarly to the first part of this lab session, it does not make sense to keep the geo_data.json file as static content. So some extra development needs to be done.
 
 - [x] To enhance the app, we implement the map such that the user can restrict the tweets with parameters _from_ and _to_ indicating the time range that the tweet was posted. In order to do so, everytime an user input a time range, the app will scan and filter the Dynamo DB, put the needed data to a new Json file with the format from-_fromtime_-to-_totime_.json and upload to Amazon S3 then the view will get from there.
 
-The view is modified as below: 
+  The view is modified as below:
 
 ```python
 def map(request):
@@ -320,12 +320,12 @@ def map(request):
         geo_data['features'].append(geo_json_feature)
     tweets.push_tweets(json.dumps(geo_data, indent=4),geoFileName)
 
-    geoFileName = 'https://s3-eu-west-1.amazonaws.com/eb-dynamic/' + str(geoFileName) 
+    geoFileName = 'https://s3-eu-west-1.amazonaws.com/eb-dynamic/' + str(geoFileName)
     return render(request, 'map.html', {'geoFileName': geoFileName})
 ```
 
-As can be seen from the code, the view gets two parameters, _from_ and _to_. It will check if the input matches our time format YYYY-MM-DD-HH-MM-SS by regular expression. We can put only YYYY, YYYY-MM or YYYY-MM-DD and so on. Furthermore, it will check if the time range is correct (_from_time_ is less than or equal _to_time_).
-The parameters are used for getting the tweets from Dynamo DB, using _get_tweets_ function from the _Tweets_ model. 
+  As can be seen from the code, the view gets two parameters, _from_ and _to_. It will check if the input matches our time format YYYY-MM-DD-HH-MM-SS by regular expression. We can put only YYYY, YYYY-MM or YYYY-MM-DD and so on. Furthermore, it will check if the time range is correct (_from_time_ is less than or equal _to_time_).
+  The parameters are used for getting the tweets from Dynamo DB, using _get_tweets_ function from the _Tweets_ model.
 
 ```python
 def get_tweets(self, from_time, to_time):
@@ -348,7 +348,7 @@ def get_tweets(self, from_time, to_time):
     ...
 ```
 
-The function allows either only _from_ or _to_ parameters or both of them. If no parameter is specified, it will get all the record. Initially, tweets' date format cannot be compared by string (e.g Thu Dec 3 18:26:07 +0000 2010), we need to modify _TwitterListener.py_ to change the format and put to Dynamo DB:
+  The function allows either only _from_ or _to_ parameters or both of them. If no parameter is specified, it will get all the record. Initially, tweets' date format cannot be compared by string (e.g Thu Dec 3 18:26:07 +0000 2010), we need to modify _TwitterListener.py_ to change the format and put to Dynamo DB:
 ```python
 import time
 response = self.table.put_item(
@@ -361,8 +361,8 @@ response = self.table.put_item(
         }
 )
 ```
-The new time format `YYYY-MM-DD-HH-MM-SS` can be compared directly by string.
-After getting the data in json, it will be uploaded to S3, using _push_tweets_ function from the model.
+  The new time format `YYYY-MM-DD-HH-MM-SS` can be compared directly by string.
+  After getting the data in json, it will be uploaded to S3, using _push_tweets_ function from the model.
 
 ```python
     def push_tweets(self, tweets, name):
@@ -376,7 +376,7 @@ After getting the data in json, it will be uploaded to S3, using _push_tweets_ f
             )
         return None
 ```
-After all the changes, we have the web app working with new parameters:
+  After all the changes, we have the web app working with new parameters:
 
 ![Map](img/map.png)
 <p align="center">Map with all data (no parameter)</p>
@@ -399,5 +399,45 @@ Also for invalid time range:
 After some queries, the S3 bucket has newly created json files:
 <p align="center"><img src="./img/s3.png" title="S3 bucket"/ width="300"></p>
 
-The previous added policies and CORS configurations allow the app to work on ElasticBeanstalk without problem. It can be accessed from [this URL](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/map) 
+The previous added policies and CORS configurations allow the app to work on ElasticBeanstalk without problem. It can be accessed from [this URL](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/map)
 ![Web on cloud](img/map_cloud.png)
+
+- [x] **Q62c**: Execute *TwitterListener.py* python script on the cloud instead of locally.
+
+  In this case several options where observed in order to run a python listener in the cloud.
+
+    1. [Amazon Web Service Kinesis](https://eu-west-1.console.aws.amazon.com/kinesis) : As the main product of AWS for streaming generations. Even though this options seemed interesting, the scope and the preliminar research needed was higher than the lab session scope.
+
+    2. Use the django webapp already up and running for executing the script: This part will include extra work on the user interface, how to fit this feature inside the currrent webapp and let the user execute the listener for a certain amount of time.
+
+    3. Open an AWS EC2 Linux AMI and execute the python script there.
+
+  The implemented option was the third. As shown in previous lab sessions, a new EC2 instanc was open.
+
+  ![New EC2](img/c/aws_ami.png)
+
+  After that it was only needed to download the credentials to access the EC2, setup the environment on the EC2, upload the python script and run it.
+
+  - **EC2 setup**: The EC2 selected already had AWS-supported image with command line tools, Pythons, Ruby and other interpreters. However, we needed to install our version of python interpreter.
+
+  ```bash
+_$ sudo yum install -y python36-pip python36 pytohn36-setuptools
+_$ python3 --version
+Python 3.6.2
+  ```
+
+  After that we also needed to install through pip the packages Tweepy and Boto3.
+  To finalise the environment we configured the AWS client with the access key and the secret access key.
+
+  - **To update the python script** we used the Unix scp command as follows:
+
+
+  ![scp command](img/c/scp.png)
+
+  - To execute the python script we just needed to run ```_$ python3 TwitterListener.py``` but then this running execution will depend only in the terminal session where it was called.
+
+  To be able to let the python running even after clossing the session and connection with the EC2 instance, Unix provides several comments and we used the **nohup** command.
+
+  The **nohup** command is a quick and easy way of detaching a running script from a session. It does not require root access and does not make permanent changes in the system. To execute a command in the background and detached to a session you just need to run ```_$ nohup TwitterListener.py &```. Automatically the script TwitterListener.py starts running and the output of this file is stored in a file in the current directory name *nohup.out*
+
+  Finally the script is up and running (to the infinite and beyond) gathering automatically the data streamed by twitter.
