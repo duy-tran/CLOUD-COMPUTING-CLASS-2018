@@ -214,3 +214,189 @@ And consequently our interface *chart.html* was as follows:
 
 
 ### Task 6.2: How to provide our service combined with third-party services
+
+In this exercise, we will gather all the tweets showing location within a geological boundary and plot them on the map using GeoJson and Leaflet.js.
+
+- [x] Firstly, we open a listener for getting tweets and put it in a NoSQL database on DynamoDB, named `twitter-geo`. The tweets are filtered by geo bounding box.
+```python
+    twitter_stream = Stream(auth, MyListener())
+    twitter_stream.filter(locations=[-129.4,8.3,121.3,52.3])
+```
+
+- [x] After having the data, we plot them on our Django web app, a new url _map_ is added. In _form/models.py_ we add a new model with function _get_tweets_:
+
+```python
+    class Tweets(models.Model):
+        def get_tweets(self, from_time, to_time):
+            try:
+                dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
+                table = dynamodb.Table('twitter-geo')
+            except Exception as e:
+                logger.error(
+                    'Error connecting to database table: ' + (e.fmt if hasattr(e, 'fmt') else '') + ','.join(e.args))
+                return None
+            response = table.scan()
+            if response['ResponseMetadata']['HTTPStatusCode'] == 200:
+                return response['Items']
+            logger.error('Unknown error retrieving tweets from database.')
+            return None
+```
+
+- [x] In _form/views.py_, the following code is added. It get the request from the browser, request tweets from the model and put in file _geo_data.json_
+```python
+import json
+def map(request):
+    geo_data = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    tweets = Tweets()
+    for tweet in tweets.get_tweets():
+        geo_json_feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [tweet['c0'], tweet['c1']]
+            },
+            "properties": {
+                "text": tweet['text'],
+                "created_at": tweet['created_at']
+            }
+        }
+        geo_data['features'].append(geo_json_feature)
+    with open(os.path.join(BASE_DIR, 'static', 'geo_data.json'), 'w') as fout:
+        fout.write(json.dumps(geo_data, indent=4))
+    return render(request, 'map.html')
+```
+
+- [x] Finally, the HTML file _forms/templates/map.html_ is created, getting Json data from the static folder.
+
+- [x] To enhance the app, we implement the map such that the user can restrict the tweets with parameters _from_ and _to_ indicating the time range that the tweet was posted. In order to do so, everytime an user input a time range, the app will scan and filter the Dynamo DB, put the needed data to a new Json file with the format from-_fromtime_-to-_totime_.json and upload to Amazon S3 then the view will get from there.
+
+The view is modified as below: 
+
+```python
+def map(request):
+    from_time = request.GET.get('from')
+    to_time = request.GET.get('to')
+    time_format = '^\d{4}(-(0[1-9]|1[012])(-([012][0-9]|3[01])(-([01][0-9]|2[0-3])(-[0-5][0-9]){0,2})?)?)?$'
+    if from_time:
+        try:
+            re.match(time_format,from_time).group(0)
+        except Exception as e:
+            return HttpResponse('Invalid time format, the format is YYYY-MM-DD-HH-MM-SS', status=200)
+    if to_time:
+        try:
+            re.match(time_format,to_time).group(0)
+        except Exception as e:
+            return HttpResponse('Invalid time format, the format is YYYY-MM-DD-HH-MM-SS', status=200)
+    if from_time and to_time:
+        if (to_time < from_time):
+            return HttpResponse('Invalid time range', status=200)
+        geoFileName = 'from-' + from_time + '-to-' + to_time + '.json'
+    elif from_time:
+        geoFileName = 'from-' + from_time + '.json'
+    elif to_time:
+        geoFileName = 'to-' + to_time + '.json'
+    else:
+        geoFileName = 'geo_data.json'
+    geo_data = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    tweets = Tweets()
+    for tweet in tweets.get_tweets(from_time,to_time):
+        geo_json_feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [tweet['c0'], tweet['c1']]
+            },
+            "properties": {
+                "text": tweet['text'],
+                "created_at": tweet['created_at']
+            }
+        }
+        geo_data['features'].append(geo_json_feature)
+    tweets.push_tweets(json.dumps(geo_data, indent=4),geoFileName)
+
+    geoFileName = 'https://s3-eu-west-1.amazonaws.com/eb-dynamic/' + str(geoFileName) 
+    return render(request, 'map.html', {'geoFileName': geoFileName})
+```
+
+As can be seen from the code, the view gets two parameters, _from_ and _to_. It will check if the input matches our time format YYYY-MM-DD-HH-MM-SS by regular expression. We can put only YYYY, YYYY-MM or YYYY-MM-DD and so on. Furthermore, it will check if the time range is correct (_from_time_ is less than or equal _to_time_).
+The parameters are used for getting the tweets from Dynamo DB, using _get_tweets_ function from the _Tweets_ model. 
+
+```python
+def get_tweets(self, from_time, to_time):
+    ...
+    expression_attribute_values = {}
+    FilterExpression = []
+    if from_time:
+        expression_attribute_values[':from_time'] = from_time
+        FilterExpression.append('created_at >= :from_time')
+    if to_time:
+        expression_attribute_values[':to_time'] = to_time
+        FilterExpression.append('created_at <= :to_time')
+    if expression_attribute_values and FilterExpression:
+        response = table.scan(
+            FilterExpression=' and '.join(FilterExpression),
+            ExpressionAttributeValues=expression_attribute_values,
+        )
+    else:
+        response = table.scan()
+    ...
+```
+
+The function allows either only _from_ or _to_ parameters or both of them. If no parameter is specified, it will get all the record. Initially, tweets' date format cannot be compared by string (e.g Thu Dec 3 18:26:07 +0000 2010), we need to modify _TwitterListener.py_ to change the format and put to Dynamo DB:
+```python
+import time
+response = self.table.put_item(
+    Item={
+        'id': tweet['id_str'],
+        'c0': str(tweet['coordinates']['coordinates'][0]),
+        'c1': str(tweet['coordinates']['coordinates'][1]),
+        'text': tweet['text'],
+        'created_at': time.strftime('%Y-%m-%d-%H-%M-%S', time.strptime(tweet['created_at'],'%a %b %d %H:%M:%S +0000 %Y')),
+        }
+)
+```
+The new time format `YYYY-MM-DD-HH-MM-SS` can be compared directly by string.
+After getting the data in json, it will be uploaded to S3, using _push_tweets_ function from the model.
+
+```python
+    def push_tweets(self, tweets, name):
+        try:
+            s3 = boto3.resource('s3', region_name=AWS_REGION)
+            obj = s3.Object('eb-dynamic', name)
+            obj.put(Body=tweets)
+        except Exception as e:
+            logger.error(
+                'Error connecting to the s3 bucket: ' + (e.fmt if hasattr(e, 'fmt') else '') + ','.join(e.args)
+            )
+        return None
+```
+After all the changes, we have the web app working with new parameters:
+
+![Map](img/map.png)
+Map with all data (no parameter)
+
+![Map with from parameter](img/map_from.png)
+Map with only _from_ parameter
+
+![Map with to parameter](img/map_to.png)
+Map with only _to_ parameter
+
+![Map with both parameter](img/map_from_to.png)
+Map with both parameters
+
+We tried to put some invalid parameter value, the map will not be rendered and the follow message is displayed
+<p align="center"><img src="./img/invalid_format.png" title="Invalid format"/ width="400"></p>
+
+Also for invalid time range:
+<p align="center"><img src="./img/invalid_range.png" title="Invalid time range"/ width="400"></p>
+
+After some queries, the S3 bucket has newly created json files:
+<p align="center"><img src="./img/s3.png" title="S3 bucket"/ width="300"></p>
+
+The previous added policies and CORS configurations allow the app to work on ElasticBeanstalk without problem. It can be accessed from [this URL](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/map) 
