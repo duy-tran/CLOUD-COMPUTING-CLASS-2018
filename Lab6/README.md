@@ -1,4 +1,4 @@
-# Lab session #4: Creating a web application using cloud PaaS
+# Lab session #6: Interacting with users and services in the Cloud
 
 ### Universitat Politècnica de Catalunya
 
