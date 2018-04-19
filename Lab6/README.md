@@ -379,16 +379,16 @@ After getting the data in json, it will be uploaded to S3, using _push_tweets_ f
 After all the changes, we have the web app working with new parameters:
 
 ![Map](img/map.png)
-Map with all data (no parameter)
+<p align="center">Map with all data (no parameter)</p>
 
 ![Map with from parameter](img/map_from.png)
-Map with only _from_ parameter
+<p align="center">Map with only _from_ parameter</p>
 
 ![Map with to parameter](img/map_to.png)
-Map with only _to_ parameter
+<p align="center">Map with only _to_ parameter</p>
 
 ![Map with both parameter](img/map_from_to.png)
-Map with both parameters
+<p align="center">Map with both parameters</p>
 
 We tried to put some invalid parameter value, the map will not be rendered and the follow message is displayed
 <p align="center"><img src="./img/invalid_format.png" title="Invalid format"/ width="400"></p>
@@ -400,3 +400,4 @@ After some queries, the S3 bucket has newly created json files:
 <p align="center"><img src="./img/s3.png" title="S3 bucket"/ width="300"></p>
 
 The previous added policies and CORS configurations allow the app to work on ElasticBeanstalk without problem. It can be accessed from [this URL](http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/map) 
+![Web on cloud](img/map_cloud.png)
