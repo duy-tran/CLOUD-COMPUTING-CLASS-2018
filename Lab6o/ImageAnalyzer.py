@@ -17,7 +17,7 @@ api = tweepy.API(auth)
 def generate_histogram(count_label, name):
     print(str(count_label.most_common()))
 
-    mpl.rcParams['figure.figsize'] = (6, 6)
+    mpl.rcParams['figure.figsize'] = (10, 10)
     sorted_x, sorted_y = zip(*count_label.most_common(10))
     print(sorted_x, sorted_y)
 
@@ -32,7 +32,7 @@ def generate_histogram(count_label, name):
 
 def generate_wordcloud(count_label, name):
     count_label = dict(count_label)
-    wordcloud = WordCloud().generate_from_frequencies(count_label)
+    wordcloud = WordCloud(background_color="white").generate_from_frequencies(count_label)
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.savefig(name + '_wordcloud.png')
@@ -92,7 +92,7 @@ def main(twitter_profile, numberOfImages):
         # [END construct_request]
         # [START parse_response]
         response = service_request.execute()
-        print("Results for image " + url + " " + image_count + " out of " + numberOfImages)
+        print("Results for image " + url + " " + str(image_count) + " out of " + str(numberOfImages))
         for result in response['responses'][0]['labelAnnotations']:
             #print("%s - %.3f" % (result['description'], result['score']))
             count_label[result['description']] += result['score']
@@ -100,9 +100,6 @@ def main(twitter_profile, numberOfImages):
 
     generate_histogram(count_label, profile_name)
     generate_wordcloud(count_label, profile_name)
-
-
-
 
 twitter_url = str(input("Introduce the twitter url: "))
 numberOfImages = int(input("Introduce the number of images for the analysis: "))
