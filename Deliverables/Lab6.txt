@@ -4,7 +4,7 @@ Quang Duy Tran - duy9968@gmail.com
 Marc Garnica Caparrós - marcgarnicacaparros@gmail.com
 
 Group repository -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018 
-Lab5 repository folder -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/tree/master/Lab6
+Lab6 repository folder -> https://github.com/duy-tran/CLOUD-COMPUTING-CLASS-2018/tree/master/Lab6
 Web application repository -> https://github.com/marcgarnica13/eb-django-express-singup-base
 Deployed application -> http://gsgsignup-cc.eu-west-1.elasticbeanstalk.com/
 Running app locally in Ubuntu 16.04 and macOS Sierra.
