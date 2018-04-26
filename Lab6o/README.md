@@ -150,12 +150,63 @@ The file included in this repository [ImageAnalyzer.py](ImageAnalyzer.py) has be
 
     print(" -- Wordcloud saved in " + name + "wordcloud.png file.")
   ```
-
+- [x] Improvement by sending request in batches
+  
+  It can be seen that the code above send a request to Google Cloud Vision for each image. This can be improved by sending them in batch, as Google Cloud allows up to 16 images at a time. 
+  To do so, firstly all images' URLs are stored in a dynamic 2-D list.
+  ```python
+  MAX_IMAGES_PER_BATCH = 16
+  t_images = []
+  t_images.append([])
+      while image_count < numberOfImages:
+          tweets = api.user_timeline(profile_name, count=100)
+          for t in tweets:
+              if image_count < numberOfImages:
+                  tweet_count += 1
+                  try:
+                      for m in t.entities['media']:
+                          if m['type'] == 'photo':
+                              t_images[array_index].append(m['media_url_https'])
+                              image_count += 1
+                              if image_count % MAX_IMAGES_PER_BATCH == 0 and image_count < numberOfImages:
+                                  t_images.append([])
+                                  array_index += 1
+                  except:
+                      pass  
+  ```
+  
+  And then for each batch (every 16 images), we put all requests together and execute.
+  ```python
+  for batch in t_images:
+      requests = []
+      for url in batch:
+          image_count += 1
+          requests.append({
+                  'image': {
+                      'source': {
+                          "imageUri": url
+                      }
+                  },
+                  'features': [{
+                      'type': 'LABEL_DETECTION',
+                      'maxResults': 10
+                  }]
+              })
+      service_request = service.images().annotate(body={
+          'requests': requests
+      })
+      responses = service_request.execute()
+      for response in responses['responses']:
+          for result in response['labelAnnotations']:
+              count_label[result['description']] += result['score']    
+  ```
+  
+  The execution time has been reduced significantly! We did a comparison by measuring the running time, for the same Twitter account ([@NBA](http://twitter.com/nba)) and same number of images (100), batch request takes approximately 23 seconds, while without batch it takes more than 150 seconds to run.
 #### Examples
 
 The script has been runned for several examples and this is the output gained for each of them.
 
-##### Antoni Basas (Catalan journalist)
+##### [Antoni Basas](https://twitter.com/antonibassas) (Catalan journalist)
 
 This is the following interaction between the user and the command line interface. As you can see, all the process is specified through the command line.
 
@@ -277,3 +328,10 @@ Results for image https://pbs.twimg.com/media/Dbfb1Q0X4AANfhl.jpg 100 out of 100
 These are the computed data visualizations for Antoni Bassas.
 
 ![](img/antonibassas_histogram.png) ![](img/antonibassas_wordcloud.png)
+
+##### [LeBron James](https://twitter.com/KingJames) (American basketball player)
+
+Below are demonstration of data taken from LeBron James
+
+![](img/KingJames_histogram.png)
+![](img/KingJames_wordcloud.png)

@@ -5,7 +5,6 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import googleapiclient.discovery
 
-
 from tweepy import OAuthHandler
 from collections import Counter
 from wordcloud import WordCloud
@@ -14,6 +13,9 @@ auth = OAuthHandler(os.environ['CONSUMER_KEY'], os.environ['CONSUMER_SECRET'])
 auth.set_access_token(os.environ['ACCESS_TOKEN'], os.environ['ACCESS_SECRET'])
 
 api = tweepy.API(auth)
+
+# Maximum number of images per batch request
+MAX_IMAGES_PER_BATCH = 16
 
 def generate_histogram(count_label, name):
     print(str(count_label.most_common()))
@@ -47,25 +49,28 @@ def main(twitter_profile, numberOfImages):
     print(' -- Receiving a new request')
     print(' -- Twitter URL: ' + twitter_profile)
     # The only parameter is the twitter profile url
-    profile_name = twitter_profile.rsplit('/', 1)[1]
+    profile_name = twitter_profile.rsplit('com/', 1)[1]
     print(' -- Twitter user: ' + profile_name)
     print(' -- Getting the last ' + str(numberOfImages) + ' photos posted')
-
     image_count = 0
     tweet_count = 0
-
+    array_index = 0
     t_images = []
+    t_images.append([])
 
-    while (image_count < numberOfImages):
+    while image_count < numberOfImages:
         tweets = api.user_timeline(profile_name, count=100)
         for t in tweets:
-            if (image_count < numberOfImages):
+            if image_count < numberOfImages:
                 tweet_count += 1
                 try:
                     for m in t.entities['media']:
                         if m['type'] == 'photo':
-                            t_images.append(m['media_url_https'])
+                            t_images[array_index].append(m['media_url_https'])
                             image_count += 1
+                            if image_count % MAX_IMAGES_PER_BATCH == 0 and image_count < numberOfImages:
+                                t_images.append([])
+                                array_index += 1
                 except:
                     pass
 
@@ -75,35 +80,34 @@ def main(twitter_profile, numberOfImages):
     image_count = 0
     service = googleapiclient.discovery.build('vision', 'v1')
     count_label = Counter()
-    for url in t_images:
-        image_count += 1
+    # Images are sending in batches, since the number of images per batch in a request is limited
+    for batch in t_images:
+        requests = []
+        for url in batch:
+            image_count += 1
+            requests.append({
+                    'image': {
+                        'source': {
+                            "imageUri": url
+                        }
+                    },
+                    'features': [{
+                        'type': 'LABEL_DETECTION',
+                        'maxResults': 10
+                    }]
+                })
         service_request = service.images().annotate(body={
-            'requests': [{
-                'image': {
-                    'source': {
-                        "imageUri": url
-                    }
-                },
-                'features': [{
-                    'type': 'LABEL_DETECTION',
-                    'maxResults': 10
-                }]
-            }]
+            'requests': requests
         })
-
-        # [END construct_request]
-        # [START parse_response]
-        response = service_request.execute()
-        print("Results for image " + url + " " + str(image_count) + " out of " + str(numberOfImages))
-        for result in response['responses'][0]['labelAnnotations']:
-            #print("%s - %.3f" % (result['description'], result['score']))
-            count_label[result['description']] += result['score']
-        # [END parse_response]
+        responses = service_request.execute()
+        for response in responses['responses']:
+            for result in response['labelAnnotations']:
+                count_label[result['description']] += result['score']
 
     generate_histogram(count_label, profile_name)
     generate_wordcloud(count_label, profile_name)
     end_time = time.time()
-    print(' -- Total running time: ' + str(round(end_time - start_time, 2)) + ' s')
+    print(' -- Total running time: ' + str(round(end_time - start_time,2)) + ' s')
 
 twitter_url = str(input("Introduce the twitter url: "))
 numberOfImages = int(input("Introduce the number of images for the analysis: "))
