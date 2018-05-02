@@ -57,6 +57,6 @@ In a first abstract level, the system can be divided in three basic components o
 
 ### Device - Gateway - Cloud
 
-| ![Device](../img/device.png) | ![Gateway](../img/gateway.png) | ![Cloud](../img/cloud.png) |
-| :--------------------------- | :----------------------------- | :------------------------- |
-| *Device*: | *Gateway*: | *Cloud*: |
+| Device | Gateway | Cloud |
+| :---------------------------: | :-----------------------------: | :-------------------------: |
+| ![Device](../img/device.jpg) | ![Gateway](../img/gateway.jpg) | ![Cloud](../img/cloud_2.png) |
