@@ -55,8 +55,38 @@ In a first abstract level, the system can be divided in three basic components o
 
 <a name="Architecture_triplet"/>
 
-### Device - Gateway - Cloud
+### 2.1. Device - Gateway - Cloud
+<table width="100%">
+  <tr>
+  <td width="33%">
+    <strong>Device</strong>
+  </td>
+  <td width="33%">
+    <strong>Gateway</strong>
+  </td>
+  <td width="33%">
+    <strong>Cloud</strong>
+  </td>  
+  </tr>
 
-| Device | Gateway | Cloud |
-| :---------------------------: | :-----------------------------: | :-------------------------: |
-| ![Device](../img/device.jpg) | ![Gateway](../img/gateway.jpg) | ![Cloud](../img/cloud_2.png) |
+  <tr>
+  <td width="(100/x)%">
+    <p align="center"><img src="../img/device.jpg "/></p>
+  </td>
+  <td width="(100/x)%">
+   <p align="center"><img src="../img/gateway.jpg "/></p>
+  </td>
+  <td width="(100/x)%">
+  <p align="center"><img src="../img/cloud_2.png "/></p>
+  </td>  
+  </tr>
+
+  <tr>
+  <td width="(100/x)%">
+  </td>
+  <td width="(100/x)%">
+  </td>
+  <td width="(100/x)%">
+  </td>  
+  </tr>
+</table>
