@@ -29,7 +29,7 @@ The most common concepts related to Internet of Things and IoT innovation projec
   * [5.5. Analytics](#Cloud_analytics)
   * [5.6. Archival Storage (A.P.I)](#Cloud_api)
 * [6. Providers](#Providers)
-* [7. Use cases](#UseCases)
+* [7. Conclusions](#Conclusions)
 
 <a name="Overview"/>
 
@@ -214,3 +214,77 @@ The main steps through which the data will be going are basically the following:
 <a name="Cloud_api"/>
 
 ### 5.1. Archival storage (A.P.I)
+
+<a name="Providers">
+
+## 6. Providers
+
+Since the emerging of the IoT ecosystems and all its potential, several companies have been working on offering IoT infrastructure in the Cloud. The functionalities included extend from the very first devices and sensors to the most advanced analytics on the fly and storage capabilities.
+
+An extended research on the most used and reliable IoT Cloud providers can be accessed in this [Article from the DevTeam.Space](https://www.devteam.space/blog/10-best-internet-of-things-iot-cloud-platforms/).
+
+  - [Amazon Web Services IoT Platform](https://aws.amazon.com/iot-core/)
+  - [Microsoft Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/)
+  - [IBM Watson IoT Platform](https://www.ibm.com/us-en/marketplace/internet-of-things-cloud)
+  - [Google Cloud Platform](https://cloud.google.com/iot-core/)
+  - [Oracle](https://www.oracle.com/solutions/internet-of-things/)
+  - [Salesforce](https://www.salesforce.com/products/salesforce-iot/overview/)
+  - [Bosch](https://www.bosch-si.com/iot-platform/iot-platform/iot-platform.html)
+  - [CISCO IoT Cloud Connect](https://www.cisco.com/c/en/us/solutions/service-provider/iot-cloud-connect/index.html)
+  - [General Electrics Predix](https://www.predix.io/)
+  - [SAP](https://cloudplatform.sap.com/index.html)
+
+Although it may look as a topic, deciding which one to use it is a tough topic, it will ultimately depend on the specific needs of your business. For the scope of this project, it has been briefly documented the functionalities of Amazon Web Services IoT Platform, Google Cloud Platform, and Salesforce.
+
+<a name="aws_eval">
+
+### 6.1 AWS IoT Core
+
+As it is for other Cloud solutions, Amazon Web Services represents having operating a public cloud infrastructure around the world in an easy way and including a diverse portfolio of deployments. All the known Amazon services are well connected with AWS IoT Core such as AWS EC2, S3 buckets. [AWS Kinesis (Streaming Analytics)] and [Amazon SQS (Message Queue)] can be used for rule engines and streaming analytics platform for IoT.
+
+The full AWS IoT Core package includes an ingestion system and rule engines generations which directly connects to any of the AWS Endpoints.
+
+<p align="center">
+<img src="../img/aws-iot-architecture.jpg "/>
+</p>
+
+On the other hand, it requires an extensive knowledge of AWS partners and includes a considerable high vendor lock in with AWS SDK pacakges for devices. When it comes to **pricing**, in AWS IoT y
+
+<a name="google_eval">
+
+### 6.2 Google Cloud Platform IoT Core
+
+Google Cloud Platform IoT is one of the newest cloud as a service infrastructures for IoT generally available and it offers a considerably huge portfolio of service to use. One of their main competitive advantages is the compatibility with most of the private devices in the market with a simple SDK included in most of the Android and Raspberry PI distributions. Cloud Functions will work as a trigger systems for both, data organization and load and device updates and management.
+
+Cloud Pub/Sub works as a reliable message ingestion services and it enables the user to create topics for streams or channels. (Similar concept to the AWS subscriptions). Moreover, Google Cloud Dataflow provides the open Apache Beam programming model as a managed service for multi-way processing of data: from batch operations, extract-transform-load (ETL) patterns, and continuous, streaming computation (small and iterative batch operations). Cloud Datflow has been specifically designed to manage high-volume pipelines of data, common scenario in IoT ecosystems. Cloud Bigtable along with Cloud Datalab are large-scale platforms for analytics.
+
+The IoT core provides full integration with any other Google Cloud Services such as Google Cloud Data Studio or the machine learning module Cloud ML, with Tensorflow as one of the main applications. Finally Google Cloud Storage provides a single API for used objects and archival data.
+
+<p align="center">
+<img src="../img/google_iot.png "/> <img src="../img/Cloud-IoT-Final-V6.gif "/>
+</p>
+
+A possible drawback is the market share that Google nowadays has in the cloud market. Perhaps because it doesn't offer as many different services and features as AWS and Azure. It also doesn't have as many global data centers as AWS or Azure, although it is quickly expanding.
+
+<a name="azure_eval">
+
+### 6.3 Microsoft Azure IoT Hub
+
+Microsoft Azure Cloud services also offered IoT architectures in the cloud. Along with the other providers presented it uses his own range of services to enrich the IoT ecosystems with a layer of ingestion Azure IoT Hub and management of the assets, Azure IoT Central.
+
+Azure IoT Suite provides full functionalities for Notifications hubs, subscriptions to messages ingestion and stream analytics on top of machine learning algorithms and Business intelligence.
+
+<p align="center">
+<img src="../img/iot-azure-architecture.png"/>
+<img src="../img/azure_iot.png"/>
+</p>
+
+<a name="Conclusions">
+
+## 7. Conclusions
+
+
+
+<a name="References">
+
+## 8. References
