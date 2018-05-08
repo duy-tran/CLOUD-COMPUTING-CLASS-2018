@@ -343,3 +343,10 @@ Azure IoT Hub fouces in making the communication channel as reliable and secure 
 - https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-how-it-works.html
 - https://cloud.google.com/solutions/iot-overview
 - https://techbeacon.com/4-stages-iot-architecture
+- https://kx.com/media/2017/06/Sensor-Data-Storage-for-Industrial-IoT.pdf
+- https://www.xenonstack.com/blog/data-engineering/ingestion-processing-data-for-big-data-iot-solutions
+- https://www.wired.com/insights/2015/03/internet-things-data-go/
+- https://pdfs.semanticscholar.org/dc28/d92ac4e2dd3c9a77abfce80594a424797c1f.pdf
+- https://readwrite.com/2018/03/01/streaming-analytics-quietly-become-essential/
+- http://journals.sagepub.com/doi/full/10.1155/2015/431047
+- https://www.researchgate.net/publication/316240052_Big_IoT_Data_Analytics_Architecture_Opportunities_and_Open_Research_Challenges
