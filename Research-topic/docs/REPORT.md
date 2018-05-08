@@ -328,7 +328,13 @@ Azure IoT Hub fouces in making the communication channel as reliable and secure 
 
 
 ## 7. Conclusions
+This study was initially launched as a really ambitious research to unblur the IoT infrastructure. Nowadays IoT is a highly trendy word, but it is never associated with all the data pipeline and data organization needed behind.
 
+It has been proved that IoT systems involves much more than smart connected devices who communicate with each other through networks. An IoT platform interconnects first level interaction elements with large-scale database systems and analytics studio to strengthen the data gathering and potential analysis.
+
+The very end objectives of an IoT is to improve, make more efficient and create new business models in the industry that can impact directly as a significant improvement on the citizens life.
+
+A much more detailed study on the different Cloud providers and their main features in the current market is needed in order to categorize them to enable the developers choose faster and better their architecture choices depending on their own business requirements and environment.
 
 
 <a name="References">
