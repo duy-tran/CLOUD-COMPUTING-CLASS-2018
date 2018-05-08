@@ -274,12 +274,14 @@ Microsoft Azure Cloud services also offered IoT architectures in the cloud. Alon
 
 Azure IoT Suite provides full functionalities for Notifications hubs, subscriptions to messages ingestion and stream analytics on top of machine learning algorithms and Business intelligence.
 
+Azure IoT Hub fouces in making the communication channel as reliable and secure as possible, opening up a new model of authentication per-device via credentials and access control. This enables a bidirectional full connection between Cloud and Device.
+
 <p align="center">
 <img src="../img/iot-azure-architecture.png"/>
 <img src="../img/azure_iot.png"/>
 </p>
-
 <a name="Conclusions">
+
 
 ## 7. Conclusions
 
@@ -288,3 +290,12 @@ Azure IoT Suite provides full functionalities for Notifications hubs, subscripti
 <a name="References">
 
 ## 8. References
+- https://iotify.io/top-10-selection-criteria-for-your-iot-cloud-platform/
+- https://www.digitalistmag.com/tag/iot
+- https://www.networkworld.com/article/3235266/internet-of-things/iot-market-keeps-growing-with-no-end-in-sight.html
+- https://dzone.com/articles/iot-gateways-and-architecture
+- https://iot.ieee.org/images/files/pdf/IEEE_IoT_Towards_Definition_Internet_of_Things_Revision1_27MAY15.pdf
+- https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Innovations-that-IoT-will-drive-in-2018
+- https://docs.aws.amazon.com/iot/latest/developerguide/aws-iot-how-it-works.html
+- https://cloud.google.com/solutions/iot-overview
+- https://techbeacon.com/4-stages-iot-architecture
