@@ -42,7 +42,7 @@ cmdline.execute("scrapy crawl nytimes -o nytimes.json".split())
 
 Scrapping the [Internet Movie Database](https://www.imdb.com/) for information retrieval as authors and films.
 
-- [x] Analysing Forest Gump movie full credits [page](https://www.imdb.com/title/tt0109830/fullcredits/)
+- [x] Analysing Forrest Gump movie full credits [page](https://www.imdb.com/title/tt0109830/fullcredits/)
 
 <p align="center"><img src="./img/fg.jpg"></p>
 
